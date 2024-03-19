@@ -7,7 +7,9 @@ export default {
     "./node_modules/flowbite/**/*.js"
   ],
   theme: {
-
+    fontFamily: {
+      sans: 'Plus Jakarta Sans'
+    },
     colors: {
       primary: {
         '900': '#00A500',

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "32318de7e2a1193610cf557615b238ff",
+    "content-hash": "9c491b8531eec05ba41a11d9276a5749",
     "packages": [
         {
             "name": "brick/math",
@@ -3187,6 +3187,7 @@
             "time": "2023-11-08T05:53:05+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "spatie/laravel-google-fonts",
             "version": "1.4.1",
             "source": {
@@ -3329,6 +3330,8 @@
             "time": "2024-03-07T07:35:57+00:00"
         },
         {
+=======
+>>>>>>> 427887fa1a69a2c865d62285911445a130f71386
             "name": "symfony/console",
             "version": "v6.4.4",
             "source": {
