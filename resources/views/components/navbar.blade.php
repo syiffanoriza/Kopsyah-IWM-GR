@@ -1,7 +1,7 @@
 <nav class="bg-gray-50">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-start mx-auto p-4 bg-">
         <a href="#" class="flex items-start space-x-3 pe-5 rtl:space-x-reverse">
-            <img src="Assets/Logo-IWM.png" class="h-9" alt="IWM Logo"/>
+            <img src="{{asset('assets/logo/logomark.png')}}" class="h-9" alt="IWM Logo"/>
         </a>
         <button data-collapse-toggle="navbar-dropdown" type="button"
             class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-primary-900 rounded-lg md:hidden hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
