@@ -1,6 +1,6 @@
 <nav class="bg-gray-50">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-start mx-auto p-4 bg-">
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <a href="#" class="flex items-start space-x-3 pe-5 rtl:space-x-reverse">
             <img src="Assets/Logo-IWM.png" class="h-9" alt="IWM Logo"/>
         </a>
         <button data-collapse-toggle="navbar-dropdown" type="button"
