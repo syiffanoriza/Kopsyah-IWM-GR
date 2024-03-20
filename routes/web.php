@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/navbar-component', function () {
     return view('components.navbar');
 });
+
+Route::get('/admin', function () {
+    return view('admin.login');
+});

@@ -51,6 +51,16 @@ export default {
       },
     },
     extend: {
+      colors: {
+        'gradient-start-1': '#21B200',
+        'gradient-end-1': '#68D100',
+        'gradient-start-2': '#3CBB32',
+        'gradient-end-2': '#8BDD33',
+      },
+      backgroundImage: theme => ({
+        'gradient-1': `linear-gradient(to right, ${theme('colors.gradient-start-1')}, ${theme('colors.gradient-end-1')})`,
+        'gradient-2': `linear-gradient(to right, ${theme('colors.gradient-start-2')}, ${theme('colors.gradient-end-2')})`,
+      }),
     },
   },
   plugins: [
