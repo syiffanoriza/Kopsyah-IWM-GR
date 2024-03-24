@@ -14,10 +14,10 @@
         </button>
         <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
             <ul
-                class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-primary-900 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gray-50">
+                class="flex flex-col font-medium text-gray-900 md:p-0 mt-4 border border-primary-900 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gray-50">
                 <li>
                     <a href="#"
-                        class="block py-2 px-3 text-gray-900 bg-primary-900 rounded md:bg-transparent md:text-primary-900 md:p-0"
+                        class="block px-5 py-6 hover:text-gray-50 hover:bg-primary-900"
                         aria-current="page">Beranda</a>
                 </li>
                 {{-- Tentang Kami Item Nav --}}
