@@ -1,29 +1,16 @@
-<nav class="bg-gray-50">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-start mx-auto p-4 bg-">
-        <a href="#" class="flex items-start space-x-3 pe-5 rtl:space-x-reverse">
-            <img src="{{asset('assets/logo/logomark.png')}}" class="h-9" alt="IWM Logo"/>
-        </a>
-        <button data-collapse-toggle="navbar-dropdown" type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-primary-900 rounded-lg md:hidden hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-dropdown" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M1 1h15M1 7h15M1 13h15" />
-            </svg>
-        </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-            <ul
-                class="flex flex-col font-medium text-gray-900 md:p-0 mt-4 border border-primary-900 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gray-50">
+<nav class="flex items-center justify-between bg-gray-100 px-9 py-0">
+    <div class="flex items-center justify-between text-gray-900">
+        <div class="flex mr-5">
+            <img src="{{asset('assets/logo/logomark.png')}}" class="h-10" alt="IWM Logo"/>
+        </div>
+        <div>
+            <ul class="flex items-center justify-evenly text-md text-gray-900">
                 <li>
-                    <a href="#"
-                        class="block px-5 py-6 hover:text-gray-50 hover:bg-primary-900"
-                        aria-current="page">Beranda</a>
+                    <a href="#beranda" class="block py-6 px-4 hover:text-gray-50 hover:bg-primary-900">Beranda</a>
                 </li>
-                {{-- Tentang Kami Item Nav --}}
+                {{-- Tentang Kami Dropdown --}}
                 <li>
-                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                        class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-900 md:p-0 md:w-auto">Tentang Kami
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between py-6 px-4 hover:text-gray-50 hover:bg-primary-900">Tentang Kami
                         <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             fill="none" viewBox="0 0 10 6">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -48,11 +35,10 @@
                             </li>
                         </ul>
                     </div>
-                </li> 
-                {{-- Layanan Item Nav --}}
+                </li>
+                {{-- Layanan Kami Dropdown --}}
                 <li>
-                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbarTentang"
-                        class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-900 md:p-0 md:w-auto">Layanan
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="layananDropdownNavbar" class="flex items-center justify-between py-6 px-4 hover:text-gray-50 hover:bg-primary-900">Layanan
                         <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             fill="none" viewBox="0 0 10 6">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -60,7 +46,7 @@
                         </svg>
                     </button>
                     <!-- Dropdown menu -->
-                    <div id="dropdownNavbarTentang"
+                    <div id="layananDropdownNavbar"
                         class="z-10 hidden font-normal bg-gray-50 divide-y divide-gray-200 rounded border-primary-900 shadow w-44">
                         <ul class="py-2 text-sm text-gray-900" aria-labelledby="dropdownLargeButton">
                             <li>
@@ -77,20 +63,65 @@
                             </li>
                             <li>
                                 <a href="#"
-                                    class="block px-4 py-2 hover:text-gray-50 hover:bg-primary-900">Projek Tahunan</a>
+                                    class="block px-4 py-2 hover:text-gray-50 hover:bg-primary-900">Proyek Tahunan</a>
                             </li>
                         </ul>
                     </div>
-                </li> 
-                <li>
-                    <a href="#"
-                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-900 md:p-0 dark:text-white">Belanja</a>
                 </li>
                 <li>
-                    <a href="#"
-                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-900 md:p-0 dark:text-white">Daftar</a>
+                    <a href="#beranda" class="block py-6 px-4 hover:text-gray-50 hover:bg-primary-900">Belanja</a>
+                </li><li>
+                    <a href="#beranda" class="block py-6 px-4 hover:text-gray-50 hover:bg-primary-900">Daftar</a>
                 </li>
             </ul>
         </div>
     </div>
+    <div class="flex items-center justify-evenly text-md">
+        <button class="items-center rounded-md ring-2 text-sm ring-primary-900 text-primary-900 py-1 px-3 hover:text-gray-50 hover:ring-primary-900 hover:bg-primary-900 ">
+            Sign In
+        </button>
+        <div>
+            <button>
+                
+            </button>
+        </div>
+    </div>
 </nav>
+
+
+
+
+
+<nav class="flex items-center justify-between flex-wrap bg-primary-500 p-6">
+    <div class="flex items-center flex-shrink-0 text-white mr-6">
+      <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+      <span class="font-semibold text-xl tracking-tight">Tailwind CSS</span>
+    </div>
+    <div class="block lg:hidden">
+      <button class="flex items-center px-3 py-2 border rounded text-primary-200 border-primary-400 hover:text-white hover:border-white">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+      </button>
+    </div>
+    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+      <ul class="text-sm flex-collg:flex-col">
+        <li>
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-primary-200 hover:text-white mr-4">
+                Docs
+              </a>
+        </li>
+        <li>
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-primary-200 hover:text-white mr-4">
+                Examples
+              </a>
+        </li>
+        <li>
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-primary-200 hover:text-white">
+                Blog
+              </a>
+        </li>
+      </div>
+      <div>
+        <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-primary-500 hover:bg-white mt-4 lg:mt-0">Download</a>
+      </div>
+    </div>
+  </nav>
