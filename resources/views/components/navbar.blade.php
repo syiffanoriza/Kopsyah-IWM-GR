@@ -1,6 +1,6 @@
 <nav class="flex items-center justify-between bg-gray-100 px-9 py-0">
     <div class="flex items-center justify-between text-gray-900">
-        <div class="flex mr-5">
+        <div class="flex mx-5">
             <img src="{{asset('assets/logo/logomark.png')}}" class="h-10" alt="IWM Logo"/>
         </div>
         <div>
@@ -76,14 +76,17 @@
             </ul>
         </div>
     </div>
-    <div class="flex items-center justify-evenly text-md">
+    <div class="flex items-center justify-between text-md">
         <button class="items-center rounded-md ring-2 text-sm ring-primary-900 text-primary-900 py-1 px-3 hover:text-gray-50 hover:ring-primary-900 hover:bg-primary-900 ">
             Sign In
         </button>
-        <div>
-            <button>
-                
-            </button>
+        <div class="flex m-5">
+            <a href="#cart">
+                <img src="Assets/icons/shopping-bag.svg" class="h-6" alt="">
+            </a>
+            <a href="#profile">
+                <img src="Assets/icons/user.svg" class="h-6" alt="">
+            </a>
         </div>
     </div>
 </nav>
