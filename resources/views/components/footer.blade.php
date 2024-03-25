@@ -1,7 +1,7 @@
-<footer class="relative z-10 bg-gray-50 dark:bg-dark pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+<footer class="relative z-10 bg-gray-50 dark:bg-dark">
     <div class="container justify-between mx-auto p-10">
         <div class="flex flex-wrap -ms-4">
-            <div class="w-full sm:w-2/3 lg:w-3/12">
+            <div class="w-full sm:w-2/3 lg:w-3/12 ms-10">
                 <div class="w-full mb-10">
                     <a href="#" class="mb-6 flex max-w-[160px]">
                         <img src="{{asset('assets/logo/logomark.png')}}" alt="logo" class="h-12 me-3 max-w-full dark:hidden" />
@@ -57,9 +57,6 @@
             </div>
             <div class="w-full sm:w-1/2 lg:w-2/12 mx-auto">
                 <div class="w-full mb-10">
-                    <!-- <h4 class="text-lg font-semibold text-dark dark:text-white mb-6">
-                        Follow Us On
-                    </h4> -->
                     <div class="flex items-center mb-6">
                         <a href="javascript:void(0)" class="flex items-center justify-center w-8 h-8 mr-3 text-dark hover:border-primary hover:bg-primary border-stroke dark:border-dark-3 dark:hover:border-primary dark:text-white hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
                             <svg width="65" height="65" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,7 +78,6 @@
                             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M44.9586 14.9795C44.4795 13.1878 43.0628 11.7712 41.2712 11.292C38.0212 10.417 25.0003 10.417 25.0003 10.417C25.0003 10.417 11.9795 10.417 8.7295 11.292C6.93783 11.7712 5.52119 13.1878 5.04202 14.9795C4.16702 18.2295 4.16699 25.0211 4.16699 25.0211C4.16699 25.0211 4.16702 31.8128 5.04202 35.0628C5.52119 36.8545 6.93783 38.2087 8.7295 38.6878C11.9795 39.5628 25.0003 39.5628 25.0003 39.5628C25.0003 39.5628 38.0212 39.5628 41.2712 38.6878C43.0628 38.2087 44.4795 36.8545 44.9586 35.0628C45.8336 31.8128 45.8337 25.0211 45.8337 25.0211C45.8337 25.0211 45.8336 18.2295 44.9586 14.9795ZM20.8337 31.2503V18.7503L31.2503 25.0003L20.8337 31.2503Z" fill="#00A500" />
                             </svg>
-
                         </a>
                     </div>
                 </div>
