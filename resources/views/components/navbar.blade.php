@@ -1,8 +1,8 @@
-<nav class="bg-gray-50">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-start mx-auto p-4 bg-">
-        <a href="#" class="flex items-start space-x-3 pe-5 rtl:space-x-reverse">
-            <img src="{{asset('assets/logo/logomark.png')}}" class="h-9" alt="IWM Logo"/>
-        </a>
+<nav class="flex items-center justify-between bg-gray-100 px-5">
+    <div class="flex items-center justify-between text-gray-900 ml-9">
+        <div class="flex px-5">
+            <img src="{{asset('assets/logo/logomark.png')}}" class="h-10" alt="IWM Logo"/>
+        </div>
         <button data-collapse-toggle="navbar-dropdown" type="button"
             class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-primary-900 rounded-lg md:hidden hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-dropdown" aria-expanded="false">
@@ -12,18 +12,14 @@
                     d="M1 1h15M1 7h15M1 13h15" />
             </svg>
         </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-            <ul
-                class="flex flex-col font-medium text-gray-900 md:p-0 mt-4 border border-primary-900 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gray-50">
+        <div>
+            <ul class="flex items-center justify-evenly text-md text-gray-900">
                 <li>
-                    <a href="#"
-                        class="block px-5 py-6 hover:text-gray-50 hover:bg-primary-900"
-                        aria-current="page">Beranda</a>
+                    <a href="#beranda" class="block py-6 px-4 hover:text-gray-50 hover:bg-primary-900">Beranda</a>
                 </li>
-                {{-- Tentang Kami Item Nav --}}
+                {{-- Tentang Kami Dropdown --}}
                 <li>
-                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                        class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-900 md:p-0 md:w-auto">Tentang Kami
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between py-6 px-4 hover:text-gray-50 hover:bg-primary-900">Tentang Kami
                         <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             fill="none" viewBox="0 0 10 6">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -48,11 +44,10 @@
                             </li>
                         </ul>
                     </div>
-                </li> 
-                {{-- Layanan Item Nav --}}
+                </li>
+                {{-- Layanan Kami Dropdown --}}
                 <li>
-                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbarTentang"
-                        class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-900 md:p-0 md:w-auto">Layanan
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="layananDropdownNavbar" class="flex items-center justify-between py-6 px-4 hover:text-gray-50 hover:bg-primary-900">Layanan
                         <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             fill="none" viewBox="0 0 10 6">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -60,37 +55,55 @@
                         </svg>
                     </button>
                     <!-- Dropdown menu -->
-                    <div id="dropdownNavbarTentang"
+                    <div id="layananDropdownNavbar"
                         class="z-10 hidden font-normal bg-gray-50 divide-y divide-gray-200 rounded border-primary-900 shadow w-44">
                         <ul class="py-2 text-sm text-gray-900" aria-labelledby="dropdownLargeButton">
                             <li>
-                                <a href="#"
+                                <a href="#jasa-page"
                                     class="block px-4 py-2 hover:text-gray-50 hover:bg-primary-900">Jasa</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="#simpanan-page"
                                     class="block px-4 py-2 hover:text-gray-50 hover:bg-primary-900">Simpanan</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="#pembiayaan-page"
                                     class="block px-4 py-2 hover:text-gray-50 hover:bg-primary-900">Pembiayaan</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="block px-4 py-2 hover:text-gray-50 hover:bg-primary-900">Projek Tahunan</a>
+                                    class="block px-4 py-2 hover:text-gray-50 hover:bg-primary-900">Proyek Tahunan</a>
                             </li>
                         </ul>
                     </div>
-                </li> 
-                <li>
-                    <a href="#"
-                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-900 md:p-0 dark:text-white">Belanja</a>
                 </li>
                 <li>
-                    <a href="#"
-                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-900 md:p-0 dark:text-white">Daftar</a>
+                    <a href="#belanja" class="block py-6 px-4 hover:text-gray-50 hover:bg-primary-900">Belanja</a>
+                </li><li>
+                    <a href="#daftar" class="block py-6 px-4 hover:text-gray-50 hover:bg-primary-900">Daftar</a>
                 </li>
             </ul>
+        </div>
+    </div>
+    <div class="flex items-center justify-between text-md">
+        <button class="items-center rounded-md ring-2 text-sm ring-primary-900 text-primary-900 py-1 px-3 hover:text-gray-50 hover:ring-primary-900 hover:bg-primary-900">
+            Sign In
+        </button>
+        <div class="flex items-center ml-5">
+            <div class="inline-flex items-center justify-center hover:bg-primary-200 flex-shrink-0 w-8 h-8 text-primary-500 bg-primary-100 rounded-lg">
+                <a href="#profile">
+                    <img src="Assets/icons/cart.svg" class="h-6 hover:text-gray-900" alt="Cart Icon">
+                    <span class="sr-only">Cart icon</span>
+                </a>
+            </div>  
+            <div class="inline-flex m-4 items-center justify-center hover:bg-primary-200 flex-shrink-0 w-8 h-8 text-primary-500 bg-primary-100 rounded-lg">
+                <a href="#profile">
+                    <img src="Assets/icons/user.svg" class="h-6" alt="Cart Icon">
+                    <span class="sr-only">User icon</span>
+                </a>
+            </div>        
+            
+            
         </div>
     </div>
 </nav>
