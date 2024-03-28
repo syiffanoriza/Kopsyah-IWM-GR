@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\RouteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,28 +15,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [RouteController::class, 'index']);
 
 Route::get('/navbar-component', function () {
     return view('components.navbar');
 });
 
+Route::get('/login', [RouteController::class, 'login'])->name('auth.login');
+
+Route::middleware('auth')->group(function () {
+    // Input routes for user dashboard...
+});
+
 // ADMIN ROUTES - - - -
 
-Route::get('/admin', function () {
-    return view('admin.login');
-});
+Route::get('/admin/login', [AdminController::class, 'login'])->name('admin.login');
 
-Route::get('/admin/dashboard', function () {
-    return view('admin.dashboard.beranda');
-});
-
-Route::get('admin/dashboard/produk', function() {
-    return view('admin.dashboard.produk.landing');
-});
-
-Route::get('admin/dashboard/produk/test', function() {
-    return view('admin.dashboard.produk.produk');
+Route::middleware('admin.auth')->group(function () {
+    Route::get('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
+    Route::get('/admin/produk', [AdminController::class, 'produk'])->name('admin.produk');
+    Route::get('/admin/produk/sembako', [AdminController::class, 'sembako'])->name('admin.produk.sembako');
 });
