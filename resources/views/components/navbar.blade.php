@@ -1,5 +1,5 @@
 <nav class="bg-white border-gray-200 border-b">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between md:justify-start mx-auto">
+    <div class="max-w-screen-xl flex flex-wrap md:flex-nowrap items-center justify-between md:justify-start w-full mx-auto">
         <a href="#" class="flex items-center space-x-3 m-2 rtl:space-x-reverse">
             <img src="Assets/logo/logomark.png" class="h-8" alt="IWM Logo" />
         </a>
@@ -13,7 +13,7 @@
                     d="M1 1h15M1 7h15M1 13h15" />
             </svg>
         </button>
-        <div class="hidden w-full md:w-auto justify-between md:justify-between md:flex items-center" id="navbar-multi-level">
+        <div class="hidden w-full md:justify-between md:flex justify-between items-center" id="navbar-multi-level">
             <ul
                 class="flex flex-col font-medium md:p-0 mt-5 border border-gray-100 rounded-lg bg-white md:space-x-0 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
                 <li>
@@ -91,7 +91,7 @@
                         class="block py-2 px-3 hover:text-white text-gray-700 text-center hover:bg-primary-900 md:hover:bg-primary-900 md:hover:text-white md:rounded-none md:text-gray-700 md:py-6 md:px-5">Daftar</a>
                 </li>
             </ul>
-            <div class="flex space-x-3 text-center items-center justify-center bg-white m-4">
+            <div class="flex space-x-3 text-center items-center justify-center bg-white m-4 self-end">
                 <button type="button" class="text-primary-900 ring-1 ring-primary-900 bg-white hover:bg-primary-900 hover:text-white focus:ring-4 focus:ring-primary-300 font-medium rounded-md text-sm px-2 py-1.5 focus:outline-none">Sign In</button>
                 <button type="button" class="bg-primary-100 focus:ring-4 items-center justify-center hover:bg-primary-200 focus:ring-primary-300 font-medium rounded-md text-sm px-1 py-1  focus:outline-none">
                     <img src="Assets/icons/cart.svg" class="h-6" alt="">
