@@ -9,6 +9,11 @@
 </head>
 <body>
     <x-navbar/>
+    <div class="m-10">
+        <x-accordion>
+        
+        </x-accordion>
+    </div>
     <x-footer/>
 </body>
 </html>
