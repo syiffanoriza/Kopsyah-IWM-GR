@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing', [
+        "slot" => "assets/images/login.png"
+    ]);
 });
 
 Route::get('/navbar-component', function () {

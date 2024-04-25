@@ -92,11 +92,11 @@
                 </li>
             </ul>
             <div class="flex space-x-3 text-center items-center justify-center bg-white m-4 self-end">
-                <button type="button" class="text-primary-900 ring-1 ring-primary-900 bg-white hover:bg-primary-900 hover:text-white focus:ring-4 focus:ring-primary-300 font-medium rounded-md text-sm px-2 py-1.5 focus:outline-none">Sign In</button>
-                <button type="button" class="bg-primary-100 focus:ring-4 items-center justify-center hover:bg-primary-200 focus:ring-primary-300 font-medium rounded-md text-sm px-1 py-1  focus:outline-none">
+                <button type="button" class="text-primary-900 ring-1 ring-primary-900 bg-white hover:bg-primary-900 hover:text-white focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-3 py-1 focus:outline-none">Sign In</button>
+                <button type="button" class=" focus:ring-4 items-center justify-center hover:bg-primary-200 focus:ring-primary-300 font-medium rounded-md text-sm px-1 py-1  focus:outline-none">
                     <img src="Assets/icons/cart.svg" class="h-6" alt="">
                 </button>
-                <button type="button" class="bg-primary-100 focus:ring-4 items-center justify-center hover:bg-primary-200 focus:ring-primary-300 font-medium rounded-md text-sm px-1 py-1  focus:outline-none">
+                <button type="button" class="focus:ring-4 items-center justify-center hover:bg-primary-200 focus:ring-primary-300 font-medium rounded-md text-sm px-1 py-1  focus:outline-none">
                     <img src="Assets/icons/user.svg" class="h-6" alt="">
                 </button>
             </div>
