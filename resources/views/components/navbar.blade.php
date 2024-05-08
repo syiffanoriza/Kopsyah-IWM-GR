@@ -36,15 +36,15 @@
                         class="z-10 hidden font-normal ring-1 ring-primary-900 bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                         <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
                             <li>
-                                <a href="#"
+                                <a href="tentang"
                                     class="block px-4 py-2 hover:bg-primary-900 hover:text-white">Tentang</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="manajemen-iwm"
                                     class="block px-4 py-2 hover:bg-primary-900 hover:text-white">Struktur</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="kontak"
                                     class="block px-4 py-2 hover:bg-primary-900 hover:text-white">Kontak</a>
                             </li>
                         </ul>
@@ -87,7 +87,7 @@
                         class="block py-2 px-3 hover:text-white text-gray-700 text-center hover:bg-primary-900 md:hover:bg-primary-900 md:hover:text-white md:rounded-none md:text-gray-700 md:py-6 md:px-5">Belanja</a>
                 </li>
                 <li>
-                    <a href="#"
+                    <a href="daftar"
                         class="block py-2 px-3 hover:text-white text-gray-700 text-center hover:bg-primary-900 md:hover:bg-primary-900 md:hover:text-white md:rounded-none md:text-gray-700 md:py-6 md:px-5">Daftar</a>
                 </li>
             </ul>

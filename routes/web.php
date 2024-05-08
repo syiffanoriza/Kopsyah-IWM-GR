@@ -14,9 +14,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('landing', [
-        "slot" => "assets/images/login.png"
-    ]);
+    return view('landing');
+});
+
+Route::get('/tentang', function () {
+    return view('tentang');
+});
+
+Route::get('/daftar', function () {
+    return view('daftar');
+});
+
+Route::get('/kontak', function () {
+     return view('kontak');
+});
+
+
+Route::get('/manajemen-iwm', function () {
+    return view('struktur');
 });
 
 Route::get('/navbar-component', function () {
