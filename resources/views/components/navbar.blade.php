@@ -64,7 +64,7 @@
                         class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded ring-1 ring-primary-900 shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                         <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
                             <li>
-                                <a href="#"
+                                <a href="sektor-jasa"
                                     class="block px-4 py-2 hover:bg-primary-900 hover:text-white">Jasa</a>
                             </li>
                             <li>

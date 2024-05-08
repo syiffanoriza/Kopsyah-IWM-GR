@@ -29,6 +29,10 @@ Route::get('/kontak', function () {
      return view('kontak');
 });
 
+Route::get('/sektor-jasa', function () {
+    return view('sektor-jasa');
+});
+
 
 Route::get('/manajemen-iwm', function () {
     return view('struktur');
