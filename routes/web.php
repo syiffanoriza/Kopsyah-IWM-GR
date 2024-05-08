@@ -17,25 +17,40 @@ Route::get('/', function () {
     return view('landing');
 });
 
+// Tentang Kami Pages
+
 Route::get('/tentang', function () {
     return view('tentang');
+});
+
+Route::get('/kontak', function () {
+    return view('kontak');
+});
+
+Route::get('/manajemen-iwm', function () {
+   return view('struktur');
 });
 
 Route::get('/daftar', function () {
     return view('daftar');
 });
 
-Route::get('/kontak', function () {
-     return view('kontak');
-});
+// Layanan Kami Pages 
 
 Route::get('/sektor-jasa', function () {
     return view('sektor-jasa');
 });
 
+Route::get('/sektor-simpanan', function () {
+    return view('sektor-simpanan');
+});
 
-Route::get('/manajemen-iwm', function () {
-    return view('struktur');
+Route::get('/sektor-pembiayaan', function () {
+    return view('sektor-pembiayaan');
+});
+
+Route::get('/proyek-tahunan', function () {
+    return view('proyek-tahunan');
 });
 
 Route::get('/navbar-component', function () {

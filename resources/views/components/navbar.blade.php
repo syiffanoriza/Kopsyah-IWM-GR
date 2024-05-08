@@ -68,15 +68,15 @@
                                     class="block px-4 py-2 hover:bg-primary-900 hover:text-white">Jasa</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="sektor-simpanan"
                                     class="block px-4 py-2 hover:bg-primary-900 hover:text-white">Simpanan</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="sektor-pembiayaan"
                                     class="block px-4 py-2 hover:bg-primary-900 hover:text-white">Pembiayaan</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="proyek-tahunan"
                                     class="block px-4 py-2 hover:bg-primary-900 hover:text-white">Proyek Tahunan</a>
                             </li>
                         </ul>
