@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <title>Jasa Laundry - Sektor Jasa</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-
 <body>
     <x-navbar />
     <section id="laundry" class="py-20">
@@ -132,6 +130,17 @@
                                         <input type="number" name="number" id="number"
                                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-900 focus:border-primary-900 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-900 dark:focus:border-primary-900"
                                             placeholder="Nomor telepon yang dapat dihubungi" required="">
+                                    </div>
+                                    {{-- for each options feature --}}
+                                    <div class="col-span-2">
+                                        <label for="kebutuhan"
+                                            class="block mb-2 text-sm font-medium text-primary-900">Keperluan</label>
+                                            <select id="category" class="bg-gray-50 border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                                                <option selected="">Select category</option>
+                                                <option value="TV">Cuci Setrika Reguler</option>
+                                                <option value="PC">Setrika Reguler</option>
+                                                <option value="GA">Bedcover Besar</option>
+                                            </select>
                                     </div>
                                     <div class="col-span-2">
                                         <label for="address"

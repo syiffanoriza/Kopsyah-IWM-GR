@@ -160,13 +160,15 @@
                                             Telepon</label>
                                         <input type="number" name="number" id="number"
                                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-900 focus:border-primary-900 block w-full p-2.5 "
-                                            placeholder="Nomor telepon yang dapat dihubungi" required="">
+                                            placeholder="Nomor telepon yang dapat dihubungi"
+                                            required="Please Enter Your Number Phone">
                                     </div>
+                                    {{-- for each options feature --}}
                                     <div class="col-span-2">
                                         <label for="keperluan"
                                             class="block mb-2 text-sm font-medium text-primary-900">Keperluan
                                             Peminjaman</label>
-                                        <input type="text" name="number" id="number"
+                                        <input type="text" name="text" id="keperluan"
                                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-900 focus:border-primary-900 block w-full p-2.5 "
                                             placeholder="e.g., AC Kotor, perlu dibersihkan" required="">
                                     </div>
