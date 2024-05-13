@@ -137,9 +137,9 @@
                                             class="block mb-2 text-sm font-medium text-primary-900">Keperluan</label>
                                             <select id="category" class="bg-gray-50 border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
                                                 <option selected="">Select category</option>
-                                                <option value="TV">Cuci Setrika Reguler</option>
-                                                <option value="PC">Setrika Reguler</option>
-                                                <option value="GA">Bedcover Besar</option>
+                                                <option>Cuci Setrika Reguler</option>
+                                                <option>Setrika Reguler</option>
+                                                <option>Bedcover Besar</option>
                                             </select>
                                     </div>
                                     <div class="col-span-2">
