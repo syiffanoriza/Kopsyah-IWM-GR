@@ -10,15 +10,9 @@
 <body>
     <x-navbar/>
     <div class="m-10">
-<<<<<<< HEAD
-        <x-accordion title="Halo Teman" valuea="Flowbite is an open-source library of interactive components built on top
-        of Tailwind CSS including buttons, dropdowns, modals, navbars, and more." valueb="Flowbite is an open-source library of interactive components built on top
-        of Tailwind CSS including buttons, dropdowns, modals, navbars, and more."/>
-=======
-        <x-accordion header="Tujuan">
-            Lorem
-        </x-accordion>        
->>>>>>> 6c4dfc33232edb3bdbcc89bc92eebb3c760eaf92
+        <x-accordion header="tujuan">
+            oke
+        </x-accordion>
     </div>
     <x-footer/>
 </body>

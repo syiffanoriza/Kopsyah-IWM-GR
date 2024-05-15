@@ -36,15 +36,15 @@
                         class="z-10 hidden font-normal ring-1 ring-primary-900 bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                         <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
                             <li>
-                                <a href="#"
+                                <a href="tentang"
                                     class="block px-4 py-2 hover:bg-primary-900 hover:text-white">Tentang</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="manajemen-iwm"
                                     class="block px-4 py-2 hover:bg-primary-900 hover:text-white">Struktur</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="kontak"
                                     class="block px-4 py-2 hover:bg-primary-900 hover:text-white">Kontak</a>
                             </li>
                         </ul>
@@ -64,19 +64,19 @@
                         class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded ring-1 ring-primary-900 shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                         <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
                             <li>
-                                <a href="#"
+                                <a href="sektor-jasa"
                                     class="block px-4 py-2 hover:bg-primary-900 hover:text-white">Jasa</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="sektor-simpanan"
                                     class="block px-4 py-2 hover:bg-primary-900 hover:text-white">Simpanan</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="sektor-pembiayaan"
                                     class="block px-4 py-2 hover:bg-primary-900 hover:text-white">Pembiayaan</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="proyek-tahunan"
                                     class="block px-4 py-2 hover:bg-primary-900 hover:text-white">Proyek Tahunan</a>
                             </li>
                         </ul>
@@ -87,16 +87,16 @@
                         class="block py-2 px-3 hover:text-white text-gray-700 text-center hover:bg-primary-900 md:hover:bg-primary-900 md:hover:text-white md:rounded-none md:text-gray-700 md:py-6 md:px-5">Belanja</a>
                 </li>
                 <li>
-                    <a href="#"
+                    <a href="daftar"
                         class="block py-2 px-3 hover:text-white text-gray-700 text-center hover:bg-primary-900 md:hover:bg-primary-900 md:hover:text-white md:rounded-none md:text-gray-700 md:py-6 md:px-5">Daftar</a>
                 </li>
             </ul>
             <div class="flex space-x-3 text-center items-center justify-center bg-white m-4 self-end">
-                <button type="button" class="text-primary-900 ring-1 ring-primary-900 bg-white hover:bg-primary-900 hover:text-white focus:ring-4 focus:ring-primary-300 font-medium rounded-md text-sm px-2 py-1.5 focus:outline-none">Sign In</button>
-                <button type="button" class="bg-primary-100 focus:ring-4 items-center justify-center hover:bg-primary-200 focus:ring-primary-300 font-medium rounded-md text-sm px-1 py-1  focus:outline-none">
+                <button type="button" class="text-primary-900 ring-1 ring-primary-900 bg-white hover:bg-primary-900 hover:text-white focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-3 py-1 focus:outline-none">Sign In</button>
+                <button type="button" class=" focus:ring-4 items-center justify-center hover:bg-primary-200 focus:ring-primary-300 font-medium rounded-md text-sm px-1 py-1  focus:outline-none">
                     <img src="Assets/icons/cart.svg" class="h-6" alt="">
                 </button>
-                <button type="button" class="bg-primary-100 focus:ring-4 items-center justify-center hover:bg-primary-200 focus:ring-primary-300 font-medium rounded-md text-sm px-1 py-1  focus:outline-none">
+                <button type="button" class="focus:ring-4 items-center justify-center hover:bg-primary-200 focus:ring-primary-300 font-medium rounded-md text-sm px-1 py-1  focus:outline-none">
                     <img src="Assets/icons/user.svg" class="h-6" alt="">
                 </button>
             </div>

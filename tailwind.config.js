@@ -7,6 +7,12 @@ export default {
     "./node_modules/flowbite/**/*.js"
   ],
   theme: {
+
+    container: {
+      center: true,
+      padding: '16px',
+    },
+
     fontFamily: {
       sans: 'Plus Jakarta Sans'
     },
@@ -77,6 +83,9 @@ export default {
       }
     },
     extend: {
+      screens: {
+        '2xl': '1320px',
+      }
     },
   },
   plugins: [
