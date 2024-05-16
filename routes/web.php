@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('tentang');
+Route::get('/beranda', function () {
+    return view('beranda');
 });
 
 // Tentang Kami Pages
