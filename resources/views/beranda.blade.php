@@ -30,7 +30,7 @@
                     <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">Bersama <span class="text-primary-800">Membangun</span> Ekonomi Umat</h2>
                     <p class="mt-4 text-gray-600 text-lg">Koperasi syariah yang didirikan pada tahun 2017 di Tangerang Selatan dan berfokus pada meningkatkan ekonomi umat muslim di Graha Raya untuk anggota dan masyarakat sekitar.</p>
                     <div class="mt-8">
-                        <a href="#" class="text-primary-600 hover:text-primary-800 font-medium">Selengkapnya
+                        <a href="tentang" class="text-primary-600 hover:text-primary-800 font-medium">Selengkapnya
                             <span class="ml-2">&#8594;</span></a>
                     </div>
                 </div>
@@ -171,7 +171,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="dark:bg-gray-800 h-full py-6 sm:py-5 lg:py-5 px-5">
             <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
                 <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
@@ -341,7 +341,9 @@
                         </h2>
                         <div class="max-w-md mx-auto mt-5 sm:flex sm:justify-center md:mt-8">
                             <div class="rounded-full shadow">
-                                <button type="button" class="flex items-center justify-center w-full px-8 py-3 text-base font-semibold text-primary-600 bg-gray-100 border border-transparent rounded-lg hover:bg-gray-200 md:py-4 md:text-lg md:px-10">Ayo Bergabung</button>
+                                <a href="/daftar">
+                                    <button type="button" class="flex items-center justify-center w-full px-8 py-3 text-base font-semibold text-primary-600 bg-gray-100 border border-transparent rounded-lg hover:bg-gray-200 md:py-4 md:text-lg md:px-10">Ayo Bergabung</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -351,4 +353,5 @@
     </section>
     <x-footer />
 </body>
+
 </html>
