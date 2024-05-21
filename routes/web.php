@@ -14,12 +14,8 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-<<<<<<< HEAD
-Route::get('/beranda', function () {
-=======
 
 Route::get('/', function () {
->>>>>>> origin/web-landing
     return view('beranda');
 });
 
