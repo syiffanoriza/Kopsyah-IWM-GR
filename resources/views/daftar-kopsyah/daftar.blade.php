@@ -26,8 +26,7 @@
 
         <div class="container">
             <div class="flex-wrap flex px-4 justify-center items-center">
-                <div
-                    class="w-full p-5 my-3 rounded-md items-center justify-center bg-white shadow-lg border border-gray-700">
+                <div class="w-full p-5 my-3 rounded-md items-center justify-center bg-white shadow-lg border border-gray-700">
                     <h2 class="mb-5 text-lg font-semibold text-primary-900 dark:text-white">Syarat Menjadi Anggota</h2>
                     <ol class="max-w-full space-y-1 text-gray-900 list-decimal list-inside ">
                         <li>
@@ -42,8 +41,7 @@
                         </li>
                     </ol>
                 </div>
-                <div
-                    class="w-full p-5 my-3 rounded-md items-center justify-center bg-white shadow-lg border border-gray-700">
+                <div class="w-full p-5 my-3 rounded-md items-center justify-center bg-white shadow-lg border border-gray-700">
                     <h2 class="mb-5 text-lg font-semibold text-primary-900 dark:text-white">Prosedur Pelaksanaan</h2>
                     <ol class="max-w-full space-y-1 text-gray-900 list-decimal list-inside ">
                         <li>
@@ -70,8 +68,7 @@
                         </li>
                     </ol>
                 </div>
-                <div
-                    class="w-full p-5 my-3 rounded-md items-center justify-center bg-white shadow-lg border border-gray-700">
+                <div class="w-full p-5 my-3 rounded-md items-center justify-center bg-white shadow-lg border border-gray-700">
                     <h2 class="mb-5 text-lg font-semibold text-primary-900 dark:text-white">Keuntungan Menjadi Anggota
                     </h2>
                     <ol class="max-w-full space-y-1 text-gray-900 list-decimal list-inside ">
@@ -96,9 +93,10 @@
                         </li>
                     </ol>
                 </div>
-                <button type="button"
-                    class="text-white bg-gradient-to-r from-[#7AD800] to-[#00A500] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 shadow-lg shadow-primary-900/30 font-medium rounded-lg text-lg px-10 py-3 text-center my-16 me-2 mb-2 tracking-wide">Daftar
-                    Kopsyah IWM</button>
+                <a href="form-daftar">
+                    <button type="button" class="text-white bg-gradient-to-r from-[#7AD800] to-[#00A500] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 shadow-lg shadow-primary-900/30 font-medium rounded-lg text-lg px-10 py-3 text-center my-16 me-2 mb-2 tracking-wide">Daftar
+                        Kopsyah IWM</button>
+                </a>
             </div>
         </div>
     </section>

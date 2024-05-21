@@ -46,7 +46,7 @@
                             <img class="w-80 mb-3 border border-gray-700 rounded-lg shadow-sm"
                                 src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="" />
                             <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Bonnie Green</h5>
-                            <span class="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
+                            <span class="text-sm text-center text-gray-500 dark:text-gray-400">Visual Designer</span>
                         </div>
                     </div>
                     <div class="w-full h-auto max-w-full bg-white border border-gray-700 rounded-lg shadow-md">
@@ -54,7 +54,7 @@
                             <img class="w-80 mb-3 border border-gray-700 rounded-lg shadow-sm"
                                 src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="" />
                             <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Bonnie Green</h5>
-                            <span class="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
+                            <span class="text-sm text-center text-gray-500 dark:text-gray-400">Visual Designer</span>
                         </div>
                     </div>
                     <div class="w-full h-auto max-w-full bg-white border border-gray-700 rounded-lg shadow-md">
@@ -86,7 +86,7 @@
                             <img class="w-80 mb-3 border border-gray-700 rounded-lg shadow-sm"
                                 src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="" />
                             <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Bonnie Green</h5>
-                            <span class="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
+                            <span class="text-sm text-center text-gray-500 dark:text-gray-400">Visual Designer</span>
                         </div>
                     </div>
                 </div>
