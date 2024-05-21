@@ -1,7 +1,7 @@
-<footer class="relative z-10 bg-white dark:bg-dark">
+<footer class="relative z-10 dark:bg-dark">
     <div class="container justify-between mx-auto p-10">
-        <div class="flex flex-wrap -ms-4">
-            <div class="w-full sm:w-2/3 lg:w-3/12 ms-10">
+        <div class="flex flex-wrap ms-4">
+            <div class="w-full sm:w-2/3 lg:w-3/12">
                 <div class="w-full mb-10">
                     <a href="#" class="mb-6 flex max-w-[160px]">
                         <img src="{{asset('assets/logo/logomark.png')}}" alt="logo" class="h-12 me-3 max-w-full dark:hidden" />

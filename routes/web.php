@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/beranda', function () {
+Route::get('/', function () {
     return view('beranda');
 });
 
@@ -72,29 +72,29 @@ Route::get('/simpanan-umroh', function () {
 // Sektor Pembiayaan Pages
 
 Route::get('/sektor-pembiayaan', function () {
-    return view('sektor-pembiayaan');
+    return view('/sektor-pembiayaan/sektor-pembiayaan');
 });
 
 Route::get('/pembiayaan-konsumtif', function () {
-    return view('pembiayaan-konsumtif');
+    return view('/sektor-pembiayaan/pembiayaan-konsumtif');
 });
 
 Route::get('/pembiayaan-modal-umkm', function () {
-    return view('pembiayaan-modal-umkm');
+    return view('/sektor-pembiayaan/pembiayaan-modal-umkm');
 });
 
 // Proyek Tahunan Pages
 
 Route::get('/proyek-tahunan', function () {
-    return view('proyek-tahunan');
+    return view('/proyek-tahunan/proyek-tahunan');
 });
 
-Route::get('/produk-ramadhan-fair', function () {
-    return view('produk-ramadhan-fair');
+Route::get('/penjualan-ramadhan-fair', function () {
+    return view('/proyek-tahunan/penjualan-ramadhan-fair');
 });
 
 Route::get('/hewan-qurban', function () {
-    return view('hewan-qurban');
+    return view('/proyek-tahunan/hewan-qurban');
 });
 
 // Belanja Pages
@@ -106,7 +106,11 @@ Route::get('/belanja', function () {
 // Daftar Pages
 
 Route::get('/daftar', function () {
-    return view('daftar');
+    return view('/daftar-kopsyah/daftar');
+});
+
+Route::get('/form-daftar', function () {
+    return view('/daftar-kopsyah/form-daftar');
 });
 
 // Components
