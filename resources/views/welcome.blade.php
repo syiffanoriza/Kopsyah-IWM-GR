@@ -11,9 +11,9 @@
 <body>
     <x-navbar/>
     <div class="m-10">
-        <x-accordion header="Tujuan">
-            Lorem
-        </x-accordion>        
+        <x-accordion header="tujuan">
+            oke
+        </x-accordion>
     </div>
     <x-footer/>
 </body>

@@ -1,4 +1,4 @@
-<footer class="relative z-10 bg-gray-50 dark:bg-dark">
+<footer class="relative z-10 bg-white dark:bg-dark">
     <div class="container justify-between mx-auto p-10">
         <div class="flex flex-wrap -ms-4">
             <div class="w-full sm:w-2/3 lg:w-3/12 ms-10">

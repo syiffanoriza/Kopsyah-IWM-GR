@@ -5,8 +5,15 @@ export default {
     "./resources/**/*.js",
     "./resources/**/*.vue",
     "./node_modules/flowbite/**/*.js"
+    
   ],
   theme: {
+
+    container: {
+      center: true,
+      padding: '16px',
+    },
+
     fontFamily: {
       sans: 'Plus Jakarta Sans'
     },
@@ -87,6 +94,9 @@ export default {
         'gradient-1': `linear-gradient(to right, ${theme('colors.gradient-start-1')}, ${theme('colors.gradient-end-1')})`,
         'gradient-2': `linear-gradient(to right, ${theme('colors.gradient-start-2')}, ${theme('colors.gradient-end-2')})`,
       }),
+      screens: {
+        '2xl': '1320px',
+      }
     },
   },
   plugins: [
