@@ -19,7 +19,7 @@
             <p class="text-sm">Halaman Dasbor Admin Koperasi Syariah IWM Graha Raya</p>
         </div>
 
-        <div class="flex gap-4 flex-col xl:flex-row">
+        <div class="grid xl:grid-cols-2 gap-4">
             <div class="p-10 w-full bg-gray-50 rounded-md flex flex-col gap-2 shadow-sm">
                 <svg class="flex-shrink-0 w-8 h-8 text-primary-900" width="24" height="24" viewBox="0 0 24 24"
                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +29,7 @@
                 <h1 class="text-lg font-bold">Pengelolaan Produk</h1>
                 <p class="text-sm text-gray-500">Lihat dan kelola list produk dari katalog website koperasi</p>
                 <a class="flex items-center justify-between mt-2 gap-2 px-3 py-1 border border-gray-900 rounded-3xl hover:border-primary-900 hover:text-primary-900 focus:bg-primary-900 focus:text-gray-50 transition duration-200"
-                    href="{{route('/admin/dashboard/produk')}}">
+                    href="{{route('admin.produk')}}">
                     <p class="text-sm">Masuk Halaman Pengaturan</p>
                     <svg class="w-max" width="24" height="24" viewBox="0 0 24 15" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
@@ -49,7 +49,7 @@
                 <h1 class="text-lg font-bold">Pengelolaan Testimoni</h1>
                 <p class="text-sm text-gray-500">Lihat dan kelola masukan testimoni terbaru dari pelanggan</p>
                 <a class="flex items-center justify-between mt-2 gap-2 px-3 py-1 border border-gray-900 rounded-3xl hover:border-primary-900 hover:text-primary-900 focus:bg-primary-900 focus:text-gray-50 transition duration-200"
-                    href="{{url('/admin/dashboard/testimoni')}}">
+                    href="">
                     <p class="text-sm">Masuk Halaman Pengaturan</p>
                     <svg class="w-max" width="24" height="24" viewBox="0 0 24 15" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
@@ -71,7 +71,7 @@
                 <h1 class="text-lg font-bold">Pengelolaan Struktur</h1>
                 <p class="text-sm text-gray-500">Lihat dan kelola list struktur manajemen IWM Graha Raya</p>
                 <a class="flex items-center justify-between mt-2 gap-2 px-3 py-1 border border-gray-900 rounded-3xl hover:border-primary-900 hover:text-primary-900 focus:bg-primary-900 focus:text-gray-50 transition duration-200"
-                    href="{{url('/admin/dashboard/struktur')}}">
+                    href="">
                     <p class="text-sm">Masuk Halaman Pengaturan</p>
                     <svg class="w-max" width="24" height="24" viewBox="0 0 24 15" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">

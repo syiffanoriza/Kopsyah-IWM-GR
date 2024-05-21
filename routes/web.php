@@ -22,17 +22,14 @@ Route::get('/navbar-component', function () {
 });
 
 Route::get('/login', [RouteController::class, 'login'])->name('auth.login');
+Route::get('/admin/login', [AdminController::class, 'loginView'])->name('admin.login');
+Route::post('/admin/login', [AdminController::class, 'adminLogin'])->name('admin.login.submit');
 
 Route::middleware('auth')->group(function () {
-    // Input routes for user dashboard...
-});
 
-// ADMIN ROUTES - - - -
-
-Route::get('/admin/login', [AdminController::class, 'login'])->name('admin.login');
-
-Route::middleware('admin.auth')->group(function () {
     Route::get('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
-    Route::get('/admin/produk', [AdminController::class, 'produk'])->name('admin.produk');
-    Route::get('/admin/produk/sembako', [AdminController::class, 'sembako'])->name('admin.produk.sembako');
+    
+    Route::get('/admin/produk', [AdminController::class, 'indexProduk'])->name('admin.produk');
+
+    Route::get('/admin/testimoni', [AdminController::class, 'testimoni'])->name('admin.testimoni');
 });

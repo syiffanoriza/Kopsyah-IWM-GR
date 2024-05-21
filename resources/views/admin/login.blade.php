@@ -15,10 +15,15 @@
                 <img class="h-16" src="{{asset('/assets/logo/logo.svg')}}" alt="Kopsyah Logo">
 
                 <h1 class="text-2xl font-bold text-gray-900">Masuk Sebagai Admin</h1>
-                <form class="w-full" action="">
+                <form class="w-full" action="{{route('admin.login.submit')}}" method="POST">
+                    @csrf
+                    
                     <div class="flex flex-col gap-4">
                         <label for="admin-password">Password</label>
-                        <input class="border-primary-900 border rounded-lg bg-gray-50 focus:ring-0 focus:border-primary-500" id="admin-password" type="password">
+                        <input name="password" class="border-primary-900 border rounded-lg bg-gray-50 focus:ring-0 focus:border-primary-500" id="admin-password" type="password">
+                        @error('password')
+                            <p>{{$message}}</p>
+                        @enderror
                         <button class="bg-primary-900 p-2 text-gray-50 rounded-lg hover:bg-primary-500 focus:bg-primary-900  transition duration-200" type="submit">Masuk</button>
                     </div>
                 </form> 
