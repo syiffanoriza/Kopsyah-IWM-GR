@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/', function () {
-    return view('tentang');
+Route::get('/beranda', function () {
+    return view('beranda');
 });
 
 // Tentang Kami Pages
