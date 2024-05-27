@@ -249,6 +249,7 @@
                 </div>
             </div>
 
+            <!-- testimonial section -->
             <div class="max-w-screen-xl w-full px-4 mx-auto lg:px-6">
                 <div id="default-carousel" class="relative overflow-hidden gap-y-3" data-carousel="static">
                     <hr class="border-t border-primary-800 w-1/4 mx-auto mb-4">
@@ -311,6 +312,19 @@
                     <x-modal />
                 </div>
             </div>
+
+            <!-- testimonial blank page -->
+            <!-- <div class="max-w-screen-xl w-full px-4 mx-auto lg:px-6">
+                <div class="flex relative h-60 md:h-52 sm:h-52 justify-center my-20">
+                    <div class="justify-center items-center self-center">
+                        <h2 class="text-center font-semibold text-2xl text-gray-400">Belum ada testimoni!</h2>
+                        <div class="flex space-x-1 items-center my-2">
+                            <p class="text-gray-400 font-semibold">Mau memberikan testimonial versi anda?</p>
+                            <x-modal />
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </div>
     </section>
     <hr class="h-px mx-8 bg-gray-300 border-0 my-10">
