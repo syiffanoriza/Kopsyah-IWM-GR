@@ -48,7 +48,7 @@
                         IWM, dengan Akad Mudharabah, memberikan keuntungan hingga 6-8% per tahun melalui sistem Revenue
                         Sharing.</p>
                     <a href="simpanan-berjangka"
-                        class="text-white bg-gradient-to-r from-[#7AD800] to-[#00A500] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 shadow-md shadow-primary-900/30 font-medium rounded-lg text-md px-5 py-2 text-center mt-4 me-2 mb-2 tracking-wide">Lihat
+                        class="text-white bg-gradient-to-r from-[#7AD800] to-[#00A500] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 shadow-md shadow-primary-900/30 font-medium rounded-lg text-base px-5 py-2 text-center mt-4 me-2 mb-2 tracking-wide">Lihat
                         Selengkapnya
                     </a>
                 </div>
@@ -70,7 +70,7 @@
                         produk simpanan Qurban melalui akad wadiah. Ini adalah tabungan untuk investasi Qurban di masa
                         depan bagi anggota dan masyarakat.</p>
                     <a href="simpanan-qurban"
-                        class="text-white bg-gradient-to-r from-[#7AD800] to-[#00A500] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 shadow-md shadow-primary-900/30 font-medium rounded-lg text-md px-5 py-2 text-center mt-4 me-2 mb-2 tracking-wide">Lihat
+                        class="text-white bg-gradient-to-r from-[#7AD800] to-[#00A500] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 shadow-md shadow-primary-900/30 font-medium rounded-lg text-base px-5 py-2 text-center mt-4 me-2 mb-2 tracking-wide">Lihat
                         Selengkapnya
                     </a>
                 </div>
@@ -92,7 +92,7 @@
                         ditujukan khusus bagi Anggota yang ingin mewujudkan impian menunaikan ibadah Umroh pada waktu
                         yang telah ditentukan.</p>
                     <a href="simpanan-umroh"
-                        class="text-white bg-gradient-to-r from-[#7AD800] to-[#00A500] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 shadow-md shadow-primary-900/30 font-medium rounded-lg text-md px-5 py-2 text-center mt-4 me-2 mb-2 tracking-wide">Lihat
+                        class="text-white bg-gradient-to-r from-[#7AD800] to-[#00A500] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 shadow-md shadow-primary-900/30 font-medium rounded-lg text-base px-5 py-2 text-center mt-4 me-2 mb-2 tracking-wide">Lihat
                         Selengkapnya
                     </a>
                 </div>

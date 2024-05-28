@@ -99,10 +99,22 @@ Route::get('/hewan-qurban', function () {
     return view('/proyek-tahunan/hewan-qurban');
 });
 
-// Belanja Pages
+// Perdagangan Pages
 
 Route::get('/belanja', function () {
-    return view('belanja');
+    return view('sektor-perdagangan/belanja');
+});
+
+Route::get('/katalog-produk', function () {
+    return view('sektor-perdagangan/katalog-produk');
+});
+
+Route::get('/cart-belanja', function () {
+    return view('sektor-perdagangan/cart-belanja');
+});
+
+Route::get('/checkout-belanja', function () {
+    return view('sektor-perdagangan/checkout-belanja');
 });
 
 // Daftar Pages

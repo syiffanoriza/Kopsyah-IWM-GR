@@ -113,7 +113,7 @@
                 <div class="items-center justify-center flex">
                     <!-- Modal toggle -->
                     <button data-modal-target="crud-modal" data-modal-toggle="crud-modal" type="button"
-                        class="flex text-white bg-gradient-to-r from-[#7AD800] to-[#00A500] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 shadow shadow-primary-900/30 font-medium rounded-lg text-md px-32 lg:px-14 py-2.5 text-center lg:mt-16 mt-5 me-2 mb-2 tracking-wide"><svg
+                        class="flex text-white bg-gradient-to-r from-[#7AD800] to-[#00A500] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 shadow shadow-primary-900/30 font-medium rounded-lg text-base px-32 lg:px-14 py-2.5 text-center lg:mt-16 mt-5 me-2 mb-2 tracking-wide"><svg
                             xmlns="http://www.w3.org/2000/svg" class="w-5 mr-2 text-white" fill="currentColor"
                             viewBox="0 0 16 16">
                             <path

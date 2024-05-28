@@ -53,7 +53,7 @@
                             class="text-gray-900">dan</span> Mudah
                     </h5>
                     <hr class="h-0.5 w-32 mx-auto bg-gray-700">
-                    <p class="my-3 font-normal text-center text-gray-500 dark:text-gray-400">Kami memberikan hasil
+                    <p class="my-3 font-normal text-center text-gray-500">Kami memberikan hasil
                         terbaik untuk pakaian Anda dengan cepat dann mudah Dengan menggunakan teknologi modern dan
                         produk perawatan terbaik, kami menyediakan solusi lengkap untuk kebutuhan pencucian Anda.
                         Kualitas terjamin, Anda dapat mengandalkan kami untuk menjaga pakaian Anda tetap bersih dan
@@ -85,7 +85,7 @@
                 <div class="items-center justify-center flex">
                     <!-- Modal toggle -->
                     <button data-modal-target="crud-modal" data-modal-toggle="crud-modal" type="button"
-                        class="flex text-white bg-gradient-to-r justify-center items-center from-[#7AD800] to-[#00A500] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 shadow shadow-primary-900/30 font-normal md:font-medium rounded-lg text-md px-10 lg:px-32 py-2.5 text-center mt-5 me-2 mb-2 tracking-wide"><svg
+                        class="flex text-white bg-gradient-to-r justify-center items-center from-[#7AD800] to-[#00A500] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 shadow shadow-primary-900/30 font-normal md:font-medium rounded-lg text-base px-10 lg:px-32 py-2.5 text-center mt-5 me-2 mb-2 tracking-wide"><svg
                             xmlns="http://www.w3.org/2000/svg" class="w-5 mr-2 text-white" fill="currentColor"
                             viewBox="0 0 18 18">
                             <path
