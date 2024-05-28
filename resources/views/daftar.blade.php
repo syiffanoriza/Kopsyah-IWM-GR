@@ -96,9 +96,9 @@
                         </li>
                     </ol>
                 </div>
-                <button type="button"
+                <a href=""
                     class="text-white bg-gradient-to-r from-[#7AD800] to-[#00A500] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 shadow-lg shadow-primary-900/30 font-medium rounded-lg text-lg px-10 py-3 text-center my-16 me-2 mb-2 tracking-wide">Daftar
-                    Kopsyah IWM</button>
+                    Kopsyah IWM</a>
             </div>
         </div>
     </section>

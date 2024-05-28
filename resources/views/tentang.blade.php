@@ -27,7 +27,7 @@
 
     <section id="tentang" class="pt-20 pb-32">
         <div class="flex flex-wrap mb-32">
-            <div class="w-full px-4 space-y-5 items-center ">
+            <div class="w-full px-4 space-y-5 items-center">
                 <h4 class="text-center md:text-lg text-gray-700 font-medium tracking-widest">Tentang Kami</h4>
                 <h2
                     class="text-center text-4xl md:2/5 lg:w-3/4 xl:w-2/4 font-bold tracking-wide mx-auto md:text-5xl lg:text-6xl">

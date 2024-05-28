@@ -4,23 +4,23 @@
 @tailwind components;
 @tailwind utilities;
 
-::-webkit-scrollbar {
-    width: 8px;
-}
+/* ::-webkit-scrollbar {
+    width: 5px;
+} */
  
 /* Track */
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
     background: #C7E9C9;
     border-radius: 25px;
-}
+} */
  
 /* Handle */
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
     background: #00A500;
     border-radius: 5px;
 }
- 
+  */
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+/* ::-webkit-scrollbar-thumb:hover {
     background: #64C764;
-}
+} */

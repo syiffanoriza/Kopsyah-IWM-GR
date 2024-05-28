@@ -171,10 +171,10 @@
                     <p class="my-3 font-normal text-center text-gray-500 dark:text-gray-400">Dalam rangka meningkatkan
                         pelayanan kepada anggota, maka kopsyah IWM GR perlu mempertimbangkan produk pembiayaan sebagai
                         upaya memenuhi kebutuhan anggota. Pembiayaan Konsumtif menggunakan <span class="text-primary-900"> akad Murabahah/Ijarah</span></p>
-                    <button type="button"
-                        class="text-white bg-gradient-to-r from-[#7AD800] to-[#00A500] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 shadow-md shadow-primary-900/30 font-medium rounded-lg text-md px-5 py-2 text-center mt-4 me-2 mb-2 tracking-wide">Lihat
+                    <a
+                        class="text-white bg-gradient-to-r from-[#7AD800] to-[#00A500] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 shadow-md shadow-primary-900/30 font-medium rounded-lg text-base px-5 py-2 text-center mt-4 me-2 mb-2 tracking-wide">Lihat
                         Selengkapnya
-                    </button>
+                    </a>
                 </div>
                 <div
                     class="w-full lg:w-2/5 flex flex-col items-center p-7 bg-white border border-gray-700 rounded-lg shadow">
@@ -209,9 +209,9 @@
                         pelayanan kepada anggota, maka Kopsyah IWM GR perlu mempertimbangkan produk pembiayaan produktif
                         sebagai upaya meningkatkan perekonomian sektor UMKM dengan cara memberikan fasilitas pembiayaan
                         modal usaha.</p>
-                    <button type="button"
-                        class="text-white bg-gradient-to-r from-[#7AD800] to-[#00A500] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 shadow-md shadow-primary-900/30 font-medium rounded-lg text-md px-5 py-2 text-center my-4 me-2 mb-2 tracking-wide">Lihat
-                        Selengkapnya</button>
+                    <a
+                        class="text-white bg-gradient-to-r from-[#7AD800] to-[#00A500] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 shadow-md shadow-primary-900/30 font-medium rounded-lg text-base px-5 py-2 text-center my-4 me-2 mb-2 tracking-wide">Lihat
+                        Selengkapnya</a>
                 </div>
             </div>
     </section>
