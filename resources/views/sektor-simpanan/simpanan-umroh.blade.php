@@ -114,7 +114,7 @@
                     <div class="items-center justify-center flex">
                         <!-- Modal toggle -->
                         <button data-modal-target="crud-modal" data-modal-toggle="crud-modal" type="button"
-                            class="flex text-white bg-gradient-to-r justify-center items-center from-[#7AD800] to-[#00A500] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 shadow shadow-primary-900/30 font-normal md:font-medium rounded-lg text-md px-10 lg:px-32 py-2.5 text-center mt-5 me-2 mb-2 tracking-wide"><svg
+                            class="flex text-white bg-gradient-to-r justify-center items-center from-[#7AD800] to-[#00A500] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 shadow shadow-primary-900/30 font-normal md:font-medium rounded-lg text-base px-10 lg:px-32 py-2.5 text-center mt-5 me-2 mb-2 tracking-wide"><svg
                                 xmlns="http://www.w3.org/2000/svg" class="w-5 mr-2 text-white" fill="currentColor"
                                 viewBox="0 0 18 18">
                                 <path
