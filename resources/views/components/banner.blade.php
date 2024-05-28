@@ -1,5 +1,5 @@
 <div class="m-9">
-    <section class="rounded-xl bg-center bg-no-repeat bg-[url('{{ $attributes['image'] }}')] bg-gray-700 bg-blend-multiply">
+    <section class="rounded-xl bg-center bg-no-repeat bg-[url('{{ asset(public_path('assets/images/login.png')) }}')] bg-blend-multiply bg-gray-700">
         <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
             <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
                 @if (isset($title))
