@@ -63,7 +63,7 @@
                         kemudahan laundry
                         dengan fasilitas delivery free ongkir untuk sekitaran Graha raya Tangerang Selatan.</p>
                     <a href="jasa-laundry"
-                        class="text-white bg-gradient-to-r from-[#7AD800] to-[#00A500] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 shadow-md shadow-primary-900/30 font-medium rounded-lg text-md px-5 py-2 text-center mt-16 me-2 mb-2 tracking-wide">Lihat
+                        class="text-white bg-gradient-to-r from-[#7AD800] to-[#00A500] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 shadow-md shadow-primary-900/30 font-medium rounded-lg text-base px-5 py-2 text-center mt-16 me-2 mb-2 tracking-wide">Lihat
                         Selengkapnya
                     </a>
                 </div>
@@ -150,7 +150,7 @@
                         salah satu produk jasa yang ditawarkan oleh koperasi untuk seluruh anggota dalam membantu
                         mendapatkan layanan perbaikan AC dengan tenaga teknisi yang kompeten di bidangnya.</p>
                     <a href="jasa-service-ac"
-                        class="text-white bg-gradient-to-r from-[#7AD800] to-[#00A500] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 shadow-md shadow-primary-900/30 font-medium rounded-lg text-md px-5 py-2 text-center my-4 me-2 mb-2 tracking-wide">Lihat
+                        class="text-white bg-gradient-to-r from-[#7AD800] to-[#00A500] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 shadow-md shadow-primary-900/30 font-medium rounded-lg text-base px-5 py-2 text-center my-4 me-2 mb-2 tracking-wide">Lihat
                         Selengkapnya</a>
                 </div>
                 <div
@@ -170,7 +170,7 @@
                         menggunakan fasilitas pick up untuk keperluan pengiriman barang, pindahan ataupun logistik
                         dengan biaya sewa yang terjangkau.</p>
                     <a href="jasa-pick-up"
-                        class="text-white bg-gradient-to-r from-[#7AD800] to-[#00A500] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 shadow-md shadow-primary-900/30 font-medium rounded-lg text-md px-5 py-2 text-center my-4 me-2 mb-2 tracking-wide">Lihat
+                        class="text-white bg-gradient-to-r from-[#7AD800] to-[#00A500] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-primary-300 shadow-md shadow-primary-900/30 font-medium rounded-lg text-base px-5 py-2 text-center my-4 me-2 mb-2 tracking-wide">Lihat
                         Selengkapnya</a>
                 </div>
             </div>
