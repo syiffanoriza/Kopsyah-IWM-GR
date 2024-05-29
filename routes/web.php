@@ -19,6 +19,8 @@ Route::get('/', function () {
     return view('beranda');
 });
 
+Route::view('/lorem', 'testview')->name('testview');
+
 // Tentang Kami Pages
 
 Route::get('/tentang', function () {
@@ -120,8 +122,6 @@ Route::get('/form-daftar', function () {
 Route::get('/navbar-component', function () {
     return view('components.navbar');
 });
-
-Route::get('/login', [RouteController::class, 'login'])->name('auth.login');
 
 Route::middleware('auth')->group(function () {
     // Input routes for user dashboard...
