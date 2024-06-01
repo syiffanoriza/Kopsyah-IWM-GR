@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Response;
 
-class VerifyAdmin
+class isAdmin
 {
     /**
      * Handle an incoming request.
@@ -16,10 +16,10 @@ class VerifyAdmin
      */
     public function handle(Request $request, Closure $next): Response
     {
-        $user = Auth::user();
-        if (!$user->role || $user->role!='admin') {
-            return redirect('/');
+        if (!Auth::user()->role === 'admin') {
+            return redirect()->back();
         }
+        
         return $next($request);
     }
 }
