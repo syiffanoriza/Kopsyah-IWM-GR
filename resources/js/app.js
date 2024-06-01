@@ -140,22 +140,14 @@ if (document.getElementById("pie-chart") && typeof ApexCharts !== 'undefined') {
 }
 
 
-  // Ambil elemen textarea berdasarkan ID
     const textareaElement = document.getElementById('description');
-    // Ambil elemen pesan limit karakter
     const charLimitMessage = document.getElementById('charLimitMessage');
-
-    // Tambahkan event listener untuk memantau perubahan pada textarea
     textareaElement.addEventListener('input', function() {
-        // Batasi panjang karakter maksimum
         const maxLength = 174;
         if (textareaElement.value.length > maxLength) {
-            // Jika karakter melebihi batas maksimum, potong teks menjadi panjang maksimum
             textareaElement.value = textareaElement.value.slice(0, maxLength);
-            // Tampilkan pesan limit karakter
             charLimitMessage.classList.remove('hidden');
         } else {
-            // Sembunyikan pesan limit karakter jika jumlah karakter sudah sesuai
             charLimitMessage.classList.add('hidden');
         }
     });
@@ -165,10 +157,8 @@ if (document.getElementById("pie-chart") && typeof ApexCharts !== 'undefined') {
 
     categorySelect.addEventListener('change', function() {
         if (categorySelect.value === 'pelanggan' || categorySelect.value === 'anggota' || categorySelect.value === 'wakil' || categorySelect.value === 'ketua') {
-            // Jika pengguna telah memilih peran yang valid, aktifkan tombol submit
             submitButton.disabled = false;
         } else {
-            // Jika pengguna belum memilih peran yang valid, nonaktifkan tombol submit
             submitButton.disabled = true;
         }
     });
