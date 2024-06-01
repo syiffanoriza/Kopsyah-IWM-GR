@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\RouteController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,9 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('beranda');
-});
-
-Route::view('/lorem', 'testview')->name('testview');
+})->name('landing');
 
 // Tentang Kami Pages
 
@@ -127,12 +126,10 @@ Route::middleware('auth')->group(function () {
     // Input routes for user dashboard...
 });
 
-// ADMIN ROUTES - - - -
+// User Routes
 
-Route::get('/admin/login', [AdminController::class, 'login'])->name('admin.login');
-
-Route::middleware('admin.auth')->group(function () {
-    Route::get('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
-    Route::get('/admin/produk', [AdminController::class, 'produk'])->name('admin.produk');
-    Route::get('/admin/produk/sembako', [AdminController::class, 'sembako'])->name('admin.produk.sembako');
-});
+// Route::middleware(['auth', 'isUser'])->group(function () {
+//     Route::controller(UserController::class)->group(function () {
+//         Route::get('/', 'index')->name('user.dashboard');
+//     });
+// });

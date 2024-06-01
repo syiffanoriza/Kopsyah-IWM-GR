@@ -26,9 +26,9 @@ class FortifyServiceProvider extends ServiceProvider
             public function toResponse($request)
             {
                 if (Auth::user()->role === 'admin') {
-                    return redirect()->route('testview');
+                    return redirect()->route('admin.dashboard');
                 } else {
-                    return redirect()->route('testview');
+                    return redirect()->route('landing');
                 }
             }
         });
