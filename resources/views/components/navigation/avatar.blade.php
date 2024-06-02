@@ -20,7 +20,7 @@
             <a href="{{route('user.dashboard')}}" class="block px-4 py-2 hover:bg-primary-900 hover:text-gray-50">Dashboard</a>
           </li>
           <li>
-            <a href="#" class="block px-4 py-2 hover:bg-primary-900 hover:text-gray-50">Pengaturan</a>
+            <a href="{{route('user.pengaturan')}}" class="block px-4 py-2 hover:bg-primary-900 hover:text-gray-50">Pengaturan</a>
           </li>
         </ul>
         <div class="py-2">

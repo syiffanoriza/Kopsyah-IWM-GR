@@ -15,23 +15,21 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::middleware('user.data')->group(function () {
+    Route::controller(RouteController::class)->group(function () {
+        
+        Route::get('/', 'index')->name('landing');
+        
+        // Tentang Kami
+        Route::view('/tentang', 'tentang')->name('tentang');
+        Route::view('/kontak', 'kontak')->name('kontak');
+        Route::view('/manajemen-iwm', 'struktur')->name('struktur');
 
-Route::controller(RouteController::class)->group(function () {
-    Route::get('/', 'index')->name('landing'); 
-});
+        // Layanan Kami
 
-// Tentang Kami Pages
-
-Route::get('/tentang', function () {
-    return view('tentang');
-});
-
-Route::get('/kontak', function () {
-    return view('kontak');
-});
-
-Route::get('/manajemen-iwm', function () {
-   return view('struktur');
+        // Sektor Jasa
+        Route::view('/sektor-jasa', '');
+    });
 });
 
 // Layanan Kami Pages 
