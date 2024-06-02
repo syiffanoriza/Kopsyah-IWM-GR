@@ -18,7 +18,7 @@
             <ul
                 class="flex text-sm flex-col md:flex-row mt-5 md:mt-0 border border-primary-900 rounded-lg md:border-none lg:text-base">
                 <li>
-                    <a href="#"
+                    <a href="/"
                         class="block py-2 px-3 hover:text-white text-center text-gray-700 hover:bg-primary-900 md:bg-transparent md:hover:bg-primary-900 md:hover:text-white md:text-gray-700 md:py-6 md:px-5"
                         aria-current="page">Beranda</a>
                 </li>
