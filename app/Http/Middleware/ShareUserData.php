@@ -16,7 +16,9 @@ class ShareUserData
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (Auth::check()) {
+        if (!Auth::check()) {
+            return $next($request);
+        } else {
             // FETCH USER NAME DARI DB
             $name = explode(' ', Auth::user()->name);
     
@@ -40,8 +42,6 @@ class ShareUserData
             view()->share('username', $username);
             view()->share('letters', $letters);
             
-            return $next($request);
-        } else {
             return $next($request);
         }
     }
