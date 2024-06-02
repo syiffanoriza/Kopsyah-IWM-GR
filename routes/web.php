@@ -16,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('beranda');
-})->name('landing');
+Route::controller(RouteController::class)->group(function () {
+    Route::get('/', 'index')->name('landing'); 
+});
 
 // Tentang Kami Pages
 
@@ -140,8 +140,11 @@ Route::middleware('auth')->group(function () {
 
 // User Routes
 
-// Route::middleware(['auth', 'isUser'])->group(function () {
-//     Route::controller(UserController::class)->group(function () {
-//         Route::get('/', 'index')->name('user.dashboard');
-//     });
-// });
+Route::middleware(['auth', 'role.user'])->group(function () {
+    Route::controller(UserController::class)->group(function () {
+        Route::get('dashboard', 'index')->name('user.dashboard');
+        Route::view('setoran', 'user.setoran')->name('user.setoran');
+        Route::view('simpanan', 'user.simpanan')->name('user.simpanan');
+        Route::view('pengaturan', 'user.pengaturan')->name('user.pengaturan');
+    });
+});

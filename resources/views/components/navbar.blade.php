@@ -93,15 +93,16 @@
                         class="block py-2 px-3 hover:text-white rounded-b-md text-gray-900 text-center hover:bg-primary-900 md:hover:bg-primary-900 md:hover:text-white md:rounded-none  md:py-6 md:px-5">Daftar</a>
                 </li>
             </ul>
-            <div class="flex space-x-3 text-center items-center self-center justify-center bg-white m-4 self-end">
+            <div class="flex space-x-3 text-center items-center justify-center bg-white m-4 self-end">
                 @if (Auth::check())
-                    @include('components.navigation.avatar')  
-                    
-                    <a href="cart-belanja"
-                        class=" focus:ring-4 items-center justify-center hover:bg-primary-200 focus:ring-primary-300 font-medium rounded-md text-sm px-1 py-1 focus:outline-none">
+                    @include('components.navigation.avatar', [$username, $letters])
+                    <a href="cart-belanja" class=" focus:ring-4 items-center justify-center hover:bg-primary-200 focus:ring-primary-300 font-medium rounded-md text-sm px-1 py-1 focus:outline-none">
                         <img src="Assets/icons/cart.svg" class="h-6" alt="">
-                    </a>  
+                    </a>
                 @else
+                    <a href="cart-belanja" class=" focus:ring-4 items-center justify-center hover:bg-primary-200 focus:ring-primary-300 font-medium rounded-md text-sm px-1 py-1 focus:outline-none">
+                        <img src="Assets/icons/cart.svg" class="h-6" alt="">
+                    </a>
                     <a href="{{route('login')}}" class="text-primary-900 ring-1 ring-primary-900 bg-white hover:bg-primary-900 hover:text-white focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm lg:text-base px-3 py-1 focus:outline-none">Sign In</a>
                 @endif
             </div>

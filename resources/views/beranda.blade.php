@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <x-navbar />
+    @include('components.navbar', [$username, $letters])
     <x-banner image="https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg">
         <x-slot name="title">
             Selamat Datang
