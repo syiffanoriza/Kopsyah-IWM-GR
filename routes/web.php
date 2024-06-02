@@ -52,7 +52,7 @@ Route::middleware('user.data')->group(function () {
         // Perdagangan Pages
         Route::view('/belanja', 'sektor-perdagangan/belanja');
         Route::view('/katalog-produk', 'sektor-perdagangan/katalog-produk');
-        Route::view('/cart-belanja', 'sektor-percart-belanja');
+        Route::view('/cart-belanja', 'sektor-cart-belanja');
         Route::view('/checkout-belanja', 'sektor-perdagangan/checkout-belanja');
 
         // Daftar Pages
