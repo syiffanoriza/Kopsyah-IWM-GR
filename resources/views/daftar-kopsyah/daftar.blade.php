@@ -23,14 +23,13 @@
                 </p>
             </div>
         </div>
-
         <div class="container">
             <div class="flex-wrap flex px-4 justify-center items-center">
                 <div class="w-full p-5 my-3 rounded-md items-center justify-center bg-white shadow-lg border border-gray-700">
                     <h2 class="mb-5 text-lg font-semibold text-primary-900 dark:text-white">Syarat Menjadi Anggota</h2>
                     <ol class="max-w-full space-y-1 text-gray-900 list-decimal list-inside ">
                         <li>
-                            <span class="font-normal text-gray-900 ">Diutamakan berdomisili sekitaran operasional Graha
+                            <span class="font-normal text-gray-900">Diutamakan berdomisili sekitaran operasional Graha
                                 Raya</span>
                         </li>
                         <li>
