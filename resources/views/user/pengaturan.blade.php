@@ -9,9 +9,11 @@
 
     @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-100 h-screen">
     
-    @include('components.navigation.sidebar', ['active' => 'Pengaturanc'])
-    @include('maintenance')
+    @include('components.navigation.sidebar', ['active' => 'Pengaturan'])
+    <div class="ml-64 h-full">
+        @include('maintenance')
+    </div>
 </body>
 </html>

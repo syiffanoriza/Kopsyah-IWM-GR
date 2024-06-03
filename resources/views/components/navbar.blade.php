@@ -1,5 +1,5 @@
 @vite(['resources/css/app.css', 'resources/js/app.js'])
-<nav class="fixed w-full z-50 bg-white border-gray-200 border-b px-5">
+<nav class="fixed w-full z-40 bg-white border-gray-200 border-b px-5">
     <div class="max-w-screen-2xl flex flex-wrap md:flex-nowrap items-center justify-between mx-auto">
         <a href="belanja" class="flex items-center space-x-3 m-2 rtl:space-x-reverse">
             <img src="Assets/logo/logomark.png" class="h-8" alt="IWM Logo" />
@@ -124,7 +124,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="belanja"
+                    <a href="{{route('belanja')}}"
                         class="block py-2 px-3 hover:text-white text-gray-900 text-center hover:bg-primary-900 md:hover:bg-primary-900 md:hover:text-white md:rounded-none md:py-6 md:px-5">Belanja</a>
                 </li>
                 <li>
