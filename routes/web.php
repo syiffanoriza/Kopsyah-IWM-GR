@@ -49,10 +49,10 @@ Route::middleware('user.data')->group(function () {
         Route::view('/penjualan-ramadhan-fair', 'proyek-tahunan/penjualan-ramadhan-fair');
         Route::view('/hewan-qurban', 'proyek-tahunan/hewan-qurban');
 
-        // Perdagangan Pages
+        // Sektor Perdagangan Pages
         Route::view('/belanja', 'sektor-perdagangan/belanja');
         Route::view('/katalog-produk', 'sektor-perdagangan/katalog-produk');
-        Route::view('/cart-belanja', 'sektor-cart-belanja');
+        Route::view('/cart-belanja', 'sektor-perdagangan/cart-belanja');
         Route::view('/checkout-belanja', 'sektor-perdagangan/checkout-belanja');
 
         // Daftar Pages
@@ -67,5 +67,15 @@ Route::middleware(['auth', 'role.user'])->group(function () {
         Route::view('setoran', 'user.setoran')->name('user.setoran');
         Route::view('simpanan', 'user.simpanan')->name('user.simpanan');
         Route::view('pengaturan', 'user.pengaturan')->name('user.pengaturan');
+    });
+});
+
+Route::prefix('admin')->middleware(['auth', 'role.admin'])->group(function () {
+    Route::controller(AdminController::class)->group(function () {
+        Route::get('dashboard', 'index')->name('admin.dashboard');
+        Route::get('keanggotaaan', 'getUserList')->name('admin.keanggotaaan'); 
+        Route::get('dashboard', 'index')->name('admin.dashboard'); 
+        Route::get('dashboard', 'index')->name('admin.dashboard');
+        Route::get('dashboard', 'index')->name('admin.dashboard');
     });
 });
