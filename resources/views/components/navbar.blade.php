@@ -1,5 +1,5 @@
 @vite(['resources/css/app.css', 'resources/js/app.js'])
-<nav class="fixed w-full z-10 bg-white border-gray-200 border-b px-5">
+<nav class="fixed w-full z-50 bg-white border-gray-200 border-b px-5">
     <div class="max-w-screen-2xl flex flex-wrap md:flex-nowrap items-center justify-between mx-auto">
         <a href="belanja" class="flex items-center space-x-3 m-2 rtl:space-x-reverse">
             <img src="Assets/logo/logomark.png" class="h-8" alt="IWM Logo" />
