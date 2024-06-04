@@ -28,6 +28,8 @@ class ServiceController extends Controller
 
         $fetch = Product::where('category', strtoupper($category))->get();
         $products = $fetch->groupBy('sub-category');
-        return view('sektor-perdagangan/katalog-produk', compact('products', 'map'));
+
+        $categories = Product::all()->groupBy('category');
+        return view('sektor-perdagangan/katalog-produk', compact('products', 'map', 'categories'));
     }
 }
