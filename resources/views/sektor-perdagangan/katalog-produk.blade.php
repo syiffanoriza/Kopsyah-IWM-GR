@@ -45,41 +45,13 @@
                     <p class="text-primary-900 font-semibold text-xl p-2">Kategori</p>
                     <ul
                         class="text-sm font-medium w-full max-h-16 overflow-x-auto border-gray-900 border text-center text-gray-500 rounded-lg shadow-lg flex whitespace-nowrap">
+                        @foreach ($categories as $category => $items)
                         <li class="w-full">
-                            <a href="#"
+                            <a href="{{strtolower($category)}}"
                                 class="block w-full p-4 bg-white border-r border-primary-600 hover:text-gray-700 hover:bg-primary-100 rounded-s-lg focus:ring-2 focus:ring-primary-300 focus:outline-none"
-                                aria-current="page">Sembako</a>
+                                aria-current="page">{{$category}}</a>
                         </li>
-                        <li class="w-full">
-                            <a href="#"
-                                class="block w-full p-4 bg-white border-r border-primary-600 hover:text-gray-700 hover:bg-primary-100 focus:ring-2 focus:ring-primary-300 focus:outline-none"
-                                aria-current="page">Lorem Ipsum</a>
-                        </li>
-                        <li class="w-full">
-                            <a href="#"
-                                class="block w-full p-4 bg-white border-r border-primary-600 hover:text-gray-700 hover:bg-primary-100 focus:ring-2 focus:ring-primary-300  focus:outline-none"
-                                aria-current="page">Sembako</a>
-                        </li>
-                        <li class="w-full">
-                            <a href="#"
-                                class="block w-full p-4 bg-white border-r border-primary-600 hover:text-gray-700 hover:bg-primary-100 focus:ring-2 focus:ring-primary-300 focus:outline-none"
-                                aria-current="page">Sembako</a>
-                        </li>
-                        <li class="w-full">
-                            <a href="#"
-                                class="block w-full p-4 bg-white border-r border-primary-600 hover:text-gray-700 hover:bg-primary-100 focus:ring-2 focus:ring-primary-300 focus:outline-none">Perlengkapan
-                                Mandi</a>
-                        </li>
-                        <li class="w-full">
-                            <a href="#"
-                                class="block w-full p-4 bg-white border-r border-primary-600 hover:text-gray-700 hover:bg-primary-100 focus:ring-2 focus:ring-primary-300 focus:outline-none">Perlengkapan
-                                Kebersihan</a>
-                        </li>
-                        <li class="w-full">
-                            <a href="#"
-                                class="block w-full p-4 bg-white border-s-0 border-primary-600 rounded-e-lg hover:text-gray-700 hover:bg-primary-100 focus:ring-2 focus:outline-none focus:ring-primary-300">Produk
-                                Kesehatan</a>
-                        </li>
+                        @endforeach
                     </ul>
                 </div>
                 {{-- Kategori Medium --}}
