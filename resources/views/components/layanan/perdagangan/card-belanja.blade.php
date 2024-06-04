@@ -2,8 +2,9 @@
     class="w-full max-w-sm bg-white border border-gray-900 rounded-lg transition duration-500 ease-in-out hover:shadow-lg hover:border-primary-900 hover:shadow-primary-100 pt-3 px-2.5">
     <div class="relative pb-2">
         <a href="#">
-            <img class="rounded-lg border border-gray-900"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOw-pyuBrtGBubeZssKxn-4cwYi-cavhu7og&s" alt="product image" />
+            <div class="md:h-60 w-full bg-gray-200 rounded-lg overflow-hidden">
+                <img class="w-full h-full object-cover" src="https://scotturb.com/wp-content/uploads/2016/11/product-placeholder.jpg" alt="product image" />
+            </div>
         </a>
     </div>
 
@@ -83,3 +84,4 @@
         </div>
     </div>
 </div>
+
