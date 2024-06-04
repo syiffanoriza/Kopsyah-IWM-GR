@@ -54,7 +54,8 @@
                                     <span class="font-semibold">Subtotal</span>
                                     <span class="font-medium text-primary-900">Rp50.000</span>
                                 </div>
-                                <button
+                                {{-- Go to Checkout Page --}}
+                                <button type="submit" 
                                     class="bg-primary-800 hover:bg-primary-900 text-white py-2 px-4 rounded-lg mt-4 w-full">Checkout</button>
                             </div>
                         </div>
@@ -63,6 +64,7 @@
             </div>
         </div>
     </section>
+    
 </body>
 
 </html>

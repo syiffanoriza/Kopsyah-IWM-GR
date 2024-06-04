@@ -12,7 +12,7 @@
 <body>
     <x-navbar />
     {{-- Start Search Bar --}}
-    <x-search-belanja/>
+    <x-search-belanja />
     {{-- End Search Bar --}}
     {{-- Start Section Landing --}}
     <section id="landing-belanja" class="mb-20">
@@ -146,7 +146,6 @@
                             </span>
                         </button>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -170,6 +169,13 @@
                 All</a>
             </div>
             <div class="w-full flex">
+<<<<<<< HEAD
+                <div class="grid overflow-x-auto px-2 py-4 grid-cols-2 lg:grid-cols-4 gap-3">
+                    <x-card-belanja/>
+                    <x-card-belanja/>
+                    <x-card-belanja/>
+                    <x-card-belanja/>
+=======
                 <div class="grid w-full overflow-x-auto px-2 py-4 grid-cols-2 lg:grid-cols-4 gap-3">
                     @foreach ($items->take(4) as $product)
                     @component('components.layanan.perdagangan.card-belanja ', [
@@ -179,11 +185,88 @@
                     ])
                     @endcomponent
                     @endforeach
+>>>>>>> edd1622a342e5d25551dde31bf1d8a88291a4706
                 </div>
         </div>
+<<<<<<< HEAD
+        <hr class="bg-gray-200 border-none h-0.5 mx-5 md:mx-20 my-20 md:my-28">
+        <div class="container w-full">
+            <div class="w-full flex justify-start items-center mb-2 space-x-4">
+                <svg width="15" height="30" viewBox="0 0 15 30" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="15" height="30" rx="4" fill="#00A500" />
+                </svg>
+                <p class="text-primary-900 font-medium text-base md:text-lg">Kini Tersedia</p>
+            </div>
+            <div class="w-full flex justify-between items-center mb-10">
+                <h2 class="text-gray-900 text-2xl font-semibold tracking-wide">Perlengkapan Mandi</h2>
+                <a href="/katalog-produk"
+                    class="text-white bg-primary-800 hover:bg-primary-100 hover:shadow-lg hover:text-primary-900 tracking-wide focus:ring-4 focus:ring-primary-300 font-medium rounded-md text-xs md:text-sm px-5 py-2.5 md:px-8 md:py-3 focus:outline-none transition duration-500 ease-in-out ">View
+                    All</a>
+            </div>
+            <div class="w-full flex">
+                <div class="grid overflow-x-auto px-2 py-4 grid-cols-2 lg:grid-cols-4 gap-3">
+                    <x-card-belanja/>
+                    <x-card-belanja/>
+                    <x-card-belanja/>
+                    <x-card-belanja/>
+                </div>
+            </div>
+        </div>
+        <hr class="bg-gray-200 border-none h-0.5 mx-5 md:mx-20 my-20 md:my-28">
+        <div class="container w-full">
+            <div class="w-full flex justify-start items-center mb-2 space-x-4">
+                <svg width="15" height="30" viewBox="0 0 15 30" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="15" height="30" rx="4" fill="#00A500" />
+                </svg>
+                <p class="text-primary-900 font-medium text-base md:text-lg">Kini Tersedia</p>
+            </div>
+            <div class="w-full flex h-20 border flex-col sm:flex-row justify-between mb-10">
+                <h2 class="text-gray-900 text-2xl font-semibold tracking-wide">Perlengkapan Kebersihan</h2>
+                <a href="/katalog-produk"
+                    class="text-white self-end sm:self-start bg-primary-800 hover:bg-primary-100 hover:shadow-lg hover:text-primary-900 tracking-wide focus:ring-4 focus:ring-primary-300 font-medium rounded-md text-xs md:text-sm px-5 py-2.5 md:px-8 md:py-3 focus:outline-none transition duration-500 ease-in-out ">View
+                    All</a>
+            </div>
+            <div class="w-full flex">
+                <div class="grid overflow-x-auto px-2 py-4 grid-cols-2 lg:grid-cols-4 gap-3">
+                    <x-card-belanja />
+                    <x-card-belanja />
+                    <x-card-belanja />
+                    <x-card-belanja />
+                </div>
+            </div>
+        </div>
+        <hr class="bg-gray-200 border-none h-0.5 mx-5 md:mx-20 my-20 md:my-28">
+        <div class="container w-full">
+            <div class="w-full flex justify-start items-center mb-2 space-x-4">
+                <svg width="15" height="30" viewBox="0 0 15 30" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="15" height="30" rx="4" fill="#00A500" />
+                </svg>
+                <p class="text-primary-900 font-medium text-base md:text-lg">Kini Tersedia</p>
+            </div>
+            <div class="w-full flex justify-between items-center mb-10">
+                <h2 class="text-gray-900 text-2xl font-semibold tracking-wide">Produk Kesehatan</h2>
+                <a href="/katalog-produk"
+                    class="text-white bg-primary-800 hover:bg-primary-100 hover:shadow-lg hover:text-primary-900 tracking-wide focus:ring-4 focus:ring-primary-300 font-medium rounded-md text-xs md:text-sm px-5 py-2.5 md:px-8 md:py-3 focus:outline-none transition duration-500 ease-in-out ">View
+                    All</a>
+            </div>
+            <div class="w-full flex">
+                <div class="grid overflow-x-auto px-2 py-4 grid-cols-2 lg:grid-cols-4 gap-3">
+                    <x-card-belanja />
+                    <x-card-belanja />
+                    <x-card-belanja />
+                    <x-card-belanja />
+                </div>
+            </div>
+        </div>
+        <hr class="bg-gray-200 border-none h-0.5 mx-5 md:mx-20 my-20 md:my-28">
+=======
         </div>
     <hr class="bg-gray-200 border-none h-0.5 mx-5 md:mx-20 my-20 md:my-28">
     @endforeach
+>>>>>>> edd1622a342e5d25551dde31bf1d8a88291a4706
     </section>
     <footer>
         <x-footer />
