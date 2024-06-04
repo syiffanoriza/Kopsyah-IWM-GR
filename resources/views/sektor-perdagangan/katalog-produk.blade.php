@@ -84,281 +84,64 @@
                     </ul>
                 </div>
                 {{-- Kategori Medium --}}
-                <div class="border-gray-900 border shadow-lg max-h-full hidden lg:block p-4 rounded-lg">
+                <div class="border-gray-900 border shadow-lg overflow-y-auto max-h-full hidden lg:block p-4 rounded-lg">
                     <p class="text-primary-900 font-semibold text-xl">Kategori</p>
                     <hr class="w-full bg-gray-900 border-0 h-px my-1">
-                    <div class="overflow-y-auto mt-5 max-h-80">
-                        <div id="accordion-collapse" data-accordion="collapse" class="p-1">
-                            <h2 id="accordion-collapse-heading-1">
+                    <div class=" mt-5 min-h-80">
+                        @foreach ($map as $category => $items)
+                        <div id="accordion-{{strtolower($category)}}" data-accordion="collapse" class="p-1">
+                            <h2 id="accordion-{{strtolower($category)}}-heading-1">
                                 <button type="button"
                                     class="flex items-center text-base justify-between w-full py-2 px-3 my-1 font-normal rtl:text-right text-gray-900 rounded-lg focus:ring-1 focus:ring-primary-200 focus:bg-primary-200 focus:text-gray-900 hover:bg-primary-100 gap-3"
-                                    data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
-                                    aria-controls="accordion-collapse-body-1">
-                                    <span>Sembako</span>
+                                    data-accordion-target="#accordion-{{strtolower($category)}}-body-1" aria-expanded="false"
+                                    aria-controls="accordion-{{strtolower($category)}}-body-1">
+                                    <span>{{$category}}</span>
                                     <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                             stroke-width="2" d="M9 5 5 1 1 5" />
-                                    </svg>
+                                        </svg>
                                 </button>
                             </h2>
-                            <div id="accordion-collapse-body-1" class="hidden"
-                                aria-labelledby="accordion-collapse-heading-1">
+                            <div id="accordion-{{strtolower($category)}}-body-1" class="hidden"
+                                aria-labelledby="accordion-{{strtolower($category)}}-heading-1">
                                 <div class="pl-2">
-                                    <a href="">
+                                    @foreach ($items as $subcategory => $product)
+                                    <a href="/katalog-produk/{{strtolower($category)}}/#{{strtolower($subcategory)}}">
                                         <p
                                             class="text-gray-900 text-base border-none hover:border py-2 px-3 hover:bg-primary-100 rounded-lg">
-                                            Beras</p>
-                                    </a>
-                                    <a href="">
-                                        <p
-                                            class="text-gray-900 text-base border-none hover:border py-2 px-3 hover:bg-primary-100 rounded-lg">
-                                            Minuman</p>
-                                    </a>
+                                            {{$subcategory}}</p>
+                                    </a>    
+                                    @endforeach
                                 </div>
-                            </div>
-                            <h2 id="accordion-collapse-heading-2">
-                                <button type="button"
-                                    class="flex items-center text-base justify-between w-full py-2 px-3 my-1 font-normal rtl:text-right text-gray-900 rounded-lg focus:ring-1 focus:ring-primary-200 focus:bg-primary-200 focus:text-gray-900 hover:bg-primary-100 gap-3"
-                                    data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
-                                    aria-controls="accordion-collapse-body-2">
-                                    <span>Perlengkapan Mandi</span>
-                                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M9 5 5 1 1 5" />
-                                    </svg>
-                                </button>
-                            </h2>
-                            <div id="accordion-collapse-body-2" class="hidden"
-                                aria-labelledby="accordion-collapse-heading-2">
-                                <div class="pl-2">
-                                    <a href="">
-                                        <p
-                                            class="text-gray-900 text-base border-none hover:border py-2 px-3 hover:bg-primary-100 rounded-lg">
-                                            Sabun</p>
-                                    </a>
-                                    <a href="">
-                                        <p
-                                            class="text-gray-900 text-base border-none hover:border py-2 px-3 hover:bg-primary-100 rounded-lg">
-                                            Sampo</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <h2 id="accordion-collapse-heading-3">
-                                <button type="button"
-                                    class="flex items-center text-base justify-between w-full py-2 px-3 my-1 font-normal rtl:text-right text-gray-900 rounded-lg focus:ring-1 focus:ring-primary-200 focus:bg-primary-200 focus:text-gray-900 hover:bg-primary-100 gap-3"
-                                    data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
-                                    aria-controls="accordion-collapse-body-3">
-                                    <span class="overflow-y-auto whitespace-nowrap">Perlengkapan Kebersihan</span>
-                                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M9 5 5 1 1 5" />
-                                    </svg>
-                                </button>
-                            </h2>
-                            <div id="accordion-collapse-body-3" class="hidden"
-                                aria-labelledby="accordion-collapse-heading-3">
-                                <div class="pl-2">
-                                    <a href="">
-                                        <p
-                                            class="text-gray-900 text-base border-none hover:border py-2 px-3 hover:bg-primary-100 rounded-lg">
-                                            Sabun Cuci Baju</p>
-                                    </a>
-                                    <a href="">
-                                        <p
-                                            class="text-gray-900 text-base border-none hover:border py-2 px-3 hover:bg-primary-100 rounded-lg">
-                                            Sabun Cuci Piring</p>
-                                    </a>
-                                    <a href="">
-                                        <p
-                                            class="text-gray-900 text-base border-none hover:border py-2 px-3 hover:bg-primary-100 rounded-lg">
-                                            Pembersih Lantai</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <h2 id="accordion-collapse-heading-4">
-                                <button type="button"
-                                    class="flex items-center text-base justify-between w-full py-2 px-3 my-1 font-normal rtl:text-right text-gray-900 rounded-lg focus:ring-1 focus:ring-primary-200 focus:bg-primary-200 focus:text-gray-900 hover:bg-primary-100 gap-3"
-                                    data-accordion-target="#accordion-collapse-body-4" aria-expanded="true"
-                                    aria-controls="accordion-collapse-body-4">
-                                    <span>Produk Kesehatan</span>
-                                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M9 5 5 1 1 5" />
-                                    </svg>
-                                </button>
-                            </h2>
-                            <div id="accordion-collapse-body-4" class="hidden"
-                                aria-labelledby="accordion-collapse-heading-4">
-                                <div class="pl-2">
-                                    <a href="">
-                                        <p
-                                            class="text-gray-900 text-base border-none hover:border py-2 px-3 hover:bg-primary-100 rounded-lg">
-                                            Madu</p>
-                                    </a>
-                                    <a href="">
-                                        <p
-                                            class="text-gray-900 text-base border-none hover:border py-2 px-3 hover:bg-primary-100 rounded-lg">
-                                            Panadol</p>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <h2 id="accordion-collapse-heading-5">
-                                <button type="button"
-                                    class="flex items-center text-base justify-between w-full py-2 px-3 my-1 font-normal rtl:text-right text-gray-900 rounded-lg focus:ring-1 focus:ring-primary-200 focus:bg-primary-200 focus:text-gray-900 hover:bg-primary-100 gap-3"
-                                    data-accordion-target="#accordion-collapse-body-5" aria-expanded="true"
-                                    aria-controls="accordion-collapse-body-5">
-                                    <span>Sembako</span>
-                                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M9 5 5 1 1 5" />
-                                    </svg>
-                                </button>
-                            </h2>
-                            <div id="accordion-collapse-body-5" class="hidden"
-                                aria-labelledby="accordion-collapse-heading-5">
-                                <div class="pl-2">
-                                    <a href="">
-                                        <p
-                                            class="text-gray-900 text-base border-none hover:border py-2 px-3 hover:bg-primary-100 rounded-lg">
-                                            Beras</p>
-                                    </a>
-                                    <a href="">
-                                        <p
-                                            class="text-gray-900 text-base border-none hover:border py-2 px-3 hover:bg-primary-100 rounded-lg">
-                                            Minuman</p>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <h2 id="accordion-collapse-heading-6">
-                                <button type="button"
-                                    class="flex items-center text-base justify-between w-full py-2 px-3 my-1 font-normal rtl:text-right text-gray-900 rounded-lg focus:ring-1 focus:ring-primary-200 focus:bg-primary-200 focus:text-gray-900 hover:bg-primary-100 gap-3"
-                                    data-accordion-target="#accordion-collapse-body-6" aria-expanded="true"
-                                    aria-controls="accordion-collapse-body-6">
-                                    <span>Sembako</span>
-                                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M9 5 5 1 1 5" />
-                                    </svg>
-                                </button>
-                            </h2>
-                            <div id="accordion-collapse-body-6" class="hidden"
-                                aria-labelledby="accordion-collapse-heading-6">
-                                <div class="pl-2">
-                                    <a href="">
-                                        <p
-                                            class="text-gray-900 text-base border-none hover:border py-2 px-3 hover:bg-primary-100 rounded-lg">
-                                            Beras</p>
-                                    </a>
-                                    <a href="">
-                                        <p
-                                            class="text-gray-900 text-base border-none hover:border py-2 px-3 hover:bg-primary-100 rounded-lg">
-                                            Minuman</p>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <h2 id="accordion-collapse-heading-7">
-                                <button type="button"
-                                    class="flex items-center text-base justify-between w-full py-2 px-3 my-1 font-normal rtl:text-right text-gray-900 rounded-lg focus:ring-1 focus:ring-primary-200 focus:bg-primary-200 focus:text-gray-900 hover:bg-primary-100 gap-3"
-                                    data-accordion-target="#accordion-collapse-body-7" aria-expanded="true"
-                                    aria-controls="accordion-collapse-body-7">
-                                    <span>Sembako</span>
-                                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M9 5 5 1 1 5" />
-                                    </svg>
-                                </button>
-                            </h2>
-                            <div id="accordion-collapse-body-7" class="hidden"
-                                aria-labelledby="accordion-collapse-heading-7">
-                                <div class="pl-2">
-                                    <a href="">
-                                        <p
-                                            class="text-gray-900 text-base border-none hover:border py-2 px-3 hover:bg-primary-100 rounded-lg">
-                                            Beras</p>
-                                    </a>
-                                    <a href="">
-                                        <p
-                                            class="text-gray-900 text-base border-none hover:border py-2 px-3 hover:bg-primary-100 rounded-lg">
-                                            Minuman</p>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <h2 id="accordion-collapse-heading-8">
-                                <button type="button"
-                                    class="flex items-center text-base justify-between w-full py-2 px-3 my-1 font-normal rtl:text-right text-gray-900 rounded-lg focus:ring-1 focus:ring-primary-200 focus:bg-primary-200 focus:text-gray-900 hover:bg-primary-100 gap-3"
-                                    data-accordion-target="#accordion-collapse-body-8" aria-expanded="true"
-                                    aria-controls="accordion-collapse-body-8">
-                                    <span>Sembako</span>
-                                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="M9 5 5 1 1 5" />
-                                    </svg>
-                                </button>
-                            </h2>
-                            <div id="accordion-collapse-body-8" class="hidden"
-                                aria-labelledby="accordion-collapse-heading-8">
-                                <div class="pl-2">
-                                    <a href="">
-                                        <p
-                                            class="text-gray-900 text-base border-none hover:border py-2 px-3 hover:bg-primary-100 rounded-lg">
-                                            Beras</p>
-                                    </a>
-                                    <a href="">
-                                        <p
-                                            class="text-gray-900 text-base border-none hover:border py-2 px-3 hover:bg-primary-100 rounded-lg">
-                                            Minuman</p>
-                                    </a>
-                                </div>
-                            </div>
+                            </div>                                
                         </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
 
             <!-- Main Content -->
-            <div class="flex-1 py-4 lg:ml-4 mt-3">
-                <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 overflow-y-auto">
-                    <!-- Product Card 1 -->
-                    <x-card-belanja />
-                    <!-- Product Card 2 -->
-                    <x-card-belanja />
-                    <!-- Product Card 3 -->
-                    <x-card-belanja />
-                    <!-- Product Card 4 -->
-                    <x-card-belanja />
-                    <!-- Product Card 5 -->
-                    <x-card-belanja />
-                    <!-- Product Card 6 -->
-                    <x-card-belanja />
-                    <!-- Product Card 7 -->
-                    <x-card-belanja />
-                    <!-- Product Card 8 -->
-                    <x-card-belanja />
-                    <!-- Product Card 9 -->
-                    <x-card-belanja />
-                    <!-- Product Card 10 -->
-                    <x-card-belanja />
-                    <!-- Product Card 11 -->
-                    <x-card-belanja />
-                    <!-- Product Card 12 -->
-                    <x-card-belanja />
-                    <!-- Product Card 13 -->
-                    <x-card-belanja />
-                    <!-- Product Card 14 -->
-                    <x-card-belanja />
+            <div class="py-4 lg:ml-4 mt-3">
+                @foreach ($products as $product => $items)
+                <div class="w-full flex justify-start items-center mb-3 space-x-4">
+                    <svg width="15" height="30" viewBox="0 0 15 30" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="15" height="30" rx="4" fill="#00A500" />
+                </svg>
+                <p id="{{strtolower($product)}}" class="text-primary-900 font-medium text-base md:text-lg">{{$product}}</p>
                 </div>
+                <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 overflow-y-auto pb-3">
+                    @foreach ($items as $product)
+                    @component('components.layanan.perdagangan.card-belanja ', [
+                        'produk' => $product->product,
+                        'harga' => number_format($product->price, 0, '.', ','),
+                        'id' => $product->product_id
+                    ])
+                    @endcomponent
+                    @endforeach
+                </div>
+                @endforeach
             </div>
         </div>
     </div>

@@ -17,7 +17,7 @@ class isUser
     public function handle(Request $request, Closure $next): Response
     {
         if (Auth::user()->role === 'admin') {
-            return redirect()->back();
+            return redirect()->route('admin.dashboard');
         }   
         
         return $next($request);

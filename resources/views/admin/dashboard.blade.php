@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Produk Test</title>
-    <link rel="icon" href="{{asset('/assets/logo/logomark.png')}}">
+    <title>Dashboard</title>
+    <link rel="icon" href="{{ asset('/assets/logo/logomark.png') }}">
+
     @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
-<body>
-    @include('components.admin.sidebar', ['active' => 'Produk'])
+<body class="bg-gray-100">
+    @include('components.admin.sidebar', ['active' => 'Beranda'])
 </body>
-</html>
