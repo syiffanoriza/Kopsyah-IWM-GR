@@ -226,7 +226,6 @@
                                 <div class="hidden p-4 rounded-lg bg-gray-50" id="styled-card"
                                     role="tabpanel" aria-labelledby="card-tab">
                                     <div class="border p-5 justify-between flex border-primary-900 rounded-lg">
-                                        
                                         <p class="text-gray-700 font-medium inline-flex"><svg class="w-10 mr-2"
                                                 viewBox="0 0 234 143" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">

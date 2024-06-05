@@ -55,7 +55,7 @@
                     </ul>
                 </div>
                 {{-- Kategori Medium --}}
-                <div class="border-gray-900 border shadow-lg hidden xl:block p-4 rounded-lg">
+                <div class="border-gray-900 border shadow-lg hidden lg:block p-4 rounded-lg">
                     <p class="text-primary-900 font-semibold text-xl">Kategori</p>
                     <hr class="w-full bg-gray-900 border-0 h-px my-1">
                     <div class="mt-5 overflow-y-auto max-h-80">

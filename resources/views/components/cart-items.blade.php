@@ -1,12 +1,11 @@
 <div class="md:w-3/4">
-    <div class="bg-white border border-primary-900 rounded-lg shadow-md p-2 md:p-4 mb-4">
-        <div class="w-full flex-row space-x-2 justify-between flex sm:flex-row">
-                <div class="flex items-center">
-                    <img class="w-32 mr-4" src="https://via.placeholder.com/150"
-                        alt="Product image">
-                </div>
+    <div class="bg-white border border-primary-900 rounded-lg shadow-md p-2 md:p-3 mb-4">
+        <div class="w-full flex-row gap-5 justify-between flex sm:flex-row">
+            <div class="flex items-center">
+                <img class="w-32 mr-4 rounded-md" src="https://via.placeholder.com/150" alt="Product image">
+            </div>
             <div class="flex flex-row items-center justify-between w-full">
-                <div class="flex border flex-col w-32 sm:w-fit items-start">
+                <div class="flex flex-col w-32 sm:w-fit items-start">
                     <p class="font-medium text-base sm:text-lg">Sabun Lervia</p>
                     <div class="flex justify-center">
                         <p class="text-gray-600 font-bold text-xs sm:text-sm">Rp</p>
@@ -17,9 +16,8 @@
                     class="flex gap-1 w-fit px-1 py-0 border border-primary-700 flex-row rounded-full bg-white shadow-md self-center">
                     <button
                         class="w-5 h-5 self-center border border-primary-300 rounded-full text-white focus:outline-none bg-primary-800 hover:bg-primary-900">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="1"
-                            stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M5 12h14" />
                         </svg>
                     </button>
@@ -27,9 +25,8 @@
                         class="w-8 h-7 text-center text-gray-900 text-sm outline-none border border-white rounded-sm">
                     <button
                         class="w-5 h-5 self-center rounded-full border text-white hover:bg-primary-900 bg-primary-800 border-primary-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                            fill="" stroke="currentColor" stroke-width="1"
-                            stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="" stroke="currentColor"
+                            stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M12 5v14M5 12h14" />
                         </svg>
                     </button>
