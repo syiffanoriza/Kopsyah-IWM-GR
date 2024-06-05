@@ -22,8 +22,9 @@
 </head>
 
 <body>
+    <x-navbar/>
     {{-- Start Button to Top --}}
-    <a href="#search-bar"
+    <a href="navbar"
         class="fixed z-30 bottom-5 scroll-smooth group text-white right-5 bg-primary-800 hover:bg-primary-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-3 text-center inline-flex items-center me-2">
         <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -32,10 +33,8 @@
         <span class="sr-only">Icon description</span>
     </a>
     {{-- End Button to Top --}}
-    
-    <x-navbar />
     {{-- Start Search Bar --}}
-    <x-search-belanja />
+    <x-search-belanja/>
     {{-- End Search Bar --}}
     <div class="container">
         <div class="flex flex-col lg:flex-row">
@@ -56,10 +55,10 @@
                     </ul>
                 </div>
                 {{-- Kategori Medium --}}
-                <div class="border-gray-900 border shadow-lg overflow-y-auto max-h-full hidden lg:block p-4 rounded-lg">
+                <div class="border-gray-900 border shadow-lg hidden lg:block p-4 rounded-lg">
                     <p class="text-primary-900 font-semibold text-xl">Kategori</p>
                     <hr class="w-full bg-gray-900 border-0 h-px my-1">
-                    <div class=" mt-5 min-h-80">
+                    <div class="mt-5 overflow-y-auto max-h-80">
                         @foreach ($map as $category => $items)
                         <div id="accordion-{{strtolower($category)}}" data-accordion="collapse" class="p-1">
                             <h2 id="accordion-{{strtolower($category)}}-heading-1">
