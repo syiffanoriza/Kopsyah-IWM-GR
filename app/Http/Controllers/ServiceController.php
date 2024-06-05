@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CartRequest;
+use App\Models\Cart;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ServiceController extends Controller
 {
@@ -32,4 +35,13 @@ class ServiceController extends Controller
         $categories = Product::all()->groupBy('category');
         return view('sektor-perdagangan/katalog-produk', compact('products', 'map', 'categories'));
     }
+    
+        public function addCartItems(CartRequest $request) {
+            Cart::create([
+                'user_id' => $request->user_id,
+                'product_id' => $request->product_id,
+                'quantity' => $request->quantity,
+            ]);
+            return redirect('/belanja');
+        }
 }

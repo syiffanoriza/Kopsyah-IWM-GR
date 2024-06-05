@@ -37,7 +37,12 @@
             </div>
             <!-- Modal body -->
             <div class="p-4 md:p-5">
-                <form class="flex flex-col items-center text-center">
+                <form id="add-{{$id}}" method="POST" action="{{route('cart.add')}}" class="flex flex-col gap-2">
+                    @csrf
+                    @if (Auth::check())
+                    <input type="text" name="user_id" value="{{Auth::user()->user_id}}" class="hidden" readonly>
+                    @endif
+                    <input type="text" name="product_id" value="{{$id}}" class="hidden" readonly>
                     <div class="flex items-center justify-center w-full">
                         <button type="button" id="decrement-button"
                             data-input-counter-decrement="quantity-{{ $id }}"
@@ -48,7 +53,7 @@
                                     stroke-width="2" d="M1 1h16" />
                             </svg>
                         </button>
-                        <input type="text" id="quantity-{{ $id }}" data-input-counter
+                        <input name="quantity" type="text" id="quantity-{{ $id }}" data-input-counter
                             aria-describedby="helper-text-explanation"
                             class="bg-gray-50 border-x-0 border-gray-300 h-11 text-center text-gray-900 text-sm focus:ring-primary-500 focus:border-primary-500 block w-full"
                             placeholder="Jumlah Barang" required />
@@ -62,15 +67,19 @@
                             </svg>
                         </button>
                     </div>
+                </form>
             </div>
             <!-- Modal footer -->
             <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
-                <button type="submit"
-                    class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Tambah</button>
-                <button data-modal-hide="add-{{ $id }}-to-cart" type="button"
-                    class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100">Batal</button>
+                @if (Auth::check() && Auth::user()->role !== 'admin')
+                <button onclick="document.getElementById('add-{{$id}}').submit();" class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Tambah</button>
+                <button data-modal-hide="add-{{ $id }}-to-cart" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100">Batal</button>
+                @elseif (Auth::check() && Auth::user()->role === 'admin')
+                <i class="text-gray-400">Fitur ini sedang dalam proses development</i>
+                @else
+                <i class="text-gray-400">Fitur ini sedang dalam proses development</i>
+                @endif
             </div>
-            </form>
         </div>
     </div>
 </div>

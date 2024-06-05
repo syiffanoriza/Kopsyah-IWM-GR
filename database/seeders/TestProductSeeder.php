@@ -15,7 +15,7 @@ class TestProductSeeder extends Seeder
     {
         $products = array_map('str_getcsv', file(storage_path('app/data/produk.csv')));
         foreach ($products as $product) {
-            DB::table('product')->insert([
+            DB::table('products')->insert([
                 'product_id' => intval($product[0]),
                 'product' => $product[1],
                 'price' => intval($product[2]),

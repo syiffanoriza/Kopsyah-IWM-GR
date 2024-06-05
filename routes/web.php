@@ -4,6 +4,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\RouteController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\UserController;
+use Faker\Guesser\Name;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -55,6 +56,7 @@ Route::middleware('user.data')->group(function () {
         Route::get('/belanja', 'getCatalogue')->name('belanja');
         Route::get('/katalog-produk/{category}', 'getProducts');
         Route::view('/cart-belanja', 'sektor-perdagangan/cart-belanja')->name('cart');
+        Route::post('/cart-belanja/add', 'addCartItems')->name('cart.add');
         Route::view('/checkout-belanja', 'sektor-perdagangan/checkout-belanja');
         
         // Daftar Pages
