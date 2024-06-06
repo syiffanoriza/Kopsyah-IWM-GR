@@ -376,7 +376,6 @@
                 </div>
             </div>
 
-<<<<<<< HEAD
             {{-- testimonial blank page 
                 <div class="max-w-screen-xl w-full px-4 mx-auto lg:px-6">
                 <div class="flex relative h-60 md:h-52 sm:h-52 justify-center my-20">
@@ -389,61 +388,6 @@
                     </div>
                 </div>
             </div> --}} 
-=======
-            <!-- testimonial blank section (update) -->
-            <!-- <div class="max-w-screen-xl w-full px-4 mx-auto lg:px-6">
-                @isset($testimonials)
-                @if(count($testimonials) > 0)
-                <div id="default-carousel" class="relative overflow-hidden gap-y-3" data-carousel="static">
-                    <hr class="border-t border-primary-800 w-1/4 mx-auto mb-4">
-                    @foreach ($testimonials as $testimonial)
-                    <div class="flex relative h-60 md:h-52 sm:h-52 justify-center" data-carousel-inner>
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="max-w-screen-xl px-4 py-4 mx-auto text-center object-cover lg:px-6 bg-white h-60 md:h-52 sm:h-52">
-                                <figure class="max-w-screen-md mx-auto">
-                                    <div class="text-center text-md tracking-tight mb-4">
-                                        <p class="text-primary-800 font-bold">{{ $testimonial->name }}</p>
-                                        <p class="text-gray-500 font-medium dark:text-white">{{ $testimonial->position }}</p>
-                                    </div>
-                                    <blockquote>
-                                        <p class="text-lg font-medium text-gray-900 dark:text-white">"{{ $testimonial->message }}"</p>
-                                    </blockquote>
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach
-                    <hr class="border-t border-primary-800 w-1/4 mx-auto mb-5">
-                    <div class="flex justify-center mb-4 gap-4">
-                        <button class="hover:bg-primary-100 rounded-full" data-carousel-prev>
-                            <img src="Assets/icons/caret_left.svg">
-                        </button>
-                        <button class="hover:bg-primary-100 rounded-3xl" data-carousel-next>
-                            <img src="Assets/icons/caret_right.svg">
-                        </button>
-                    </div>
-                </div>
-                <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
-                <div class="my-12 justify-end flex">
-                    <p class="font-semibold text-right text-sm p-1 text-gray-400">Mau memberikan testimonial versi anda? </p>
-                    <x-modal />
-                </div>
-                @endisset
-                @else
-                <div class="max-w-screen-xl w-full px-4 mx-auto lg:px-6">
-                    <div class="flex relative h-60 md:h-52 sm:h-52 justify-center my-20">
-                        <div class="justify-center items-center self-center">
-                            <h2 class="text-center font-semibold text-2xl text-gray-400">Belum ada testimoni!</h2>
-                            <div class="flex space-x-1 items-center my-2">
-                                <p class="text-gray-400 font-semibold">Mau memberikan testimonial versi anda?</p>
-                                <x-modal />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                @endif
-            </div> -->
->>>>>>> acb4e04bd1448465c76facf03ee0da6712181468
         </div>
     </section>
     <hr class="h-px mx-8 bg-gray-300 border-0 my-10">
