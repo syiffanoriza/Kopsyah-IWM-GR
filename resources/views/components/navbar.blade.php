@@ -155,7 +155,7 @@
                 @else
                     <a href="cart-belanja"
                         class="focus:ring-4 items-center justify-center hover:bg-primary-200 focus:ring-primary-300 font-medium rounded-md text-sm p-1 focus:outline-none">
-                        <img src="Assets/icons/cart.svg" class="h-6" alt="">
+                        <img src="{{asset('assets/icons/cart.svg')}}" class="h-6" alt="">
                     </a>
                     <a href="{{ route('login') }}"
                         class="text-primary-900 ring-1 ring-primary-900 bg-white hover:bg-primary-900 hover:text-white focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm lg:text-base px-3 py-1 focus:outline-none">Sign

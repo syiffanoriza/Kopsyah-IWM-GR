@@ -35,13 +35,35 @@ class ServiceController extends Controller
         $categories = Product::all()->groupBy('category');
         return view('sektor-perdagangan/katalog-produk', compact('products', 'map', 'categories'));
     }
-    
-        public function addCartItems(CartRequest $request) {
+        
+    public function addCartItems(CartRequest $request) {
+        $cartItem = Cart::where('user_id', $request->user_id)
+            ->where('product_id', $request->product_id)
+            ->first();
+
+        if ($cartItem) {
+            $cartItem->quantity = $request->quantity;
+            $cartItem->save();
+        } else {
             Cart::create([
                 'user_id' => $request->user_id,
                 'product_id' => $request->product_id,
                 'quantity' => $request->quantity,
             ]);
-            return redirect('/belanja');
         }
+        return redirect('/belanja');
+    }
+
+    public function getCart() {
+        $cartItems = Cart::where('user_id', Auth::user()->user_id)
+            ->join('products', 'cart.product_id', '=', 'products.product_id')
+            ->select('products.*', 'cart.quantity as cart_quantity')
+            ->get();
+    
+        $subtotal = $cartItems->sum(function ($item) {
+            return $item->price * $item->cart_quantity;
+        });
+    
+        return view('sektor-perdagangan/cart-belanja', compact('cartItems', 'subtotal'));
+    }
 }

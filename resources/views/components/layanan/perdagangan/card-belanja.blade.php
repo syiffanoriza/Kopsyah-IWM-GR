@@ -1,5 +1,5 @@
 <div role="button" data-modal-target="add-{{ $id }}-to-cart" data-modal-toggle="add-{{ $id }}-to-cart"
-    class="w-full max-w-sm bg-white border border-gray-900 rounded-lg transition duration-500 ease-in-out hover:shadow-lg hover:border-primary-900 hover:shadow-primary-100 pt-3 px-2.5">
+    class="w-full max-w-sm bg-white border border-gray-900 rounded-lg transition duration-200 ease-in-out hover:shadow-md hover:border-primary-900 hover:shadow-primary-200 pt-3 px-2.5">
     <div class="relative pb-2">
         <a href="#">
             <div class="md:h-60 w-full bg-gray-200 rounded-lg overflow-hidden">
@@ -56,23 +56,24 @@
                 <form id="add-{{$id}}" method="POST" action="{{route('cart.add')}}" class="flex flex-col gap-2">
                     @csrf
                     @if (Auth::check())
-                    <input type="text" name="user_id" value="{{Auth::user()->user_id}}" class="hidden" readonly>
+                    <input type="hidden" name="user_id" value="{{Auth::user()->user_id}}" readonly>
                     @endif
-                    <input type="text" name="product_id" value="{{$id}}" class="hidden" readonly>
+                    <input type="hidden" name="product_id" value="{{$id}}" readonly>
                     <div class="flex items-center justify-center w-full">
                         <button type="button" id="decrement-button"
                             data-input-counter-decrement="quantity-{{ $id }}"
-                            class="bg-white hover:bg-primary-200 border border-e-0 border-primary-900 rounded-s-md p-3 h-11 focus:outline-none">
+                            class="bg-white hover:bg-primary-200 border border-e-0 border-primary-900 rounded-s-md p-3 h-11 focus:outline-none"
+                            onclick="decrement(this)">
                             <svg class="w-3 h-3 text-primary-900 dark:text-white" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" d="M1 1h16" />
                             </svg>
-                        </button>
-                        <input name="quantity" type="text" id="quantity-{{ $id }}" data-input-counter
+                        </button> 
+                        <input name="quantity" readonly type="text" value="0" id="quantity-{{ $id }}" data-input-counter
                             aria-describedby="helper-text-explanation"
-                            class="bg-gray-50 border-x-0 border-primary-900 h-11 text-center text-gray-900 text-sm focus:bg-primary-100 focus:ring-primary-500 focus:border-primary-500 block w-1/3"
-                            placeholder="Jumlah" required />
+                            class="bg-gray-50 ring-0 focus:ring-0 border-x-0 border-y-primary-900 focus:border-primary-900 outline-none h-11 text-center text-gray-900 text-sm focus:bg-primary-100 block w-1/3" required
+                            oninput="updateDecrementButton(this)" />
                         <button type="button" id="increment-button"
                             data-input-counter-increment="quantity-{{ $id }}"
                             class="bg-white hover:bg-primary-200 border border-s-0 border-primary-900 rounded-e-md p-3 h-11 focus:outline-none">
@@ -83,6 +84,17 @@
                             </svg>
                         </button>
                     </div>
+                    
+                    <script>
+                        function increment() {
+                            const inputId = button.getAttribute('data-input-counter-increment');
+                            const input = document.getElementById(inputId);
+                            const 
+                            if (total.) {
+                                
+                            }
+                        }
+                    </script>
                 </form>
             </div>
             <!-- Modal footer -->

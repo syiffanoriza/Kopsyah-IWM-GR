@@ -38,7 +38,7 @@
 
         <div class="container">
             <div class="w-full">
-                <div class="grid grid-cols-2 md:grid-cols-3 md:gap-8 gap-4">
+                <div class="grid md:p-10 grid-cols-2 md:grid-cols-3 gap-4">
                     <div class="w-full h-auto max-w-full bg-white border border-gray-700 rounded-lg shadow-md">
                         <div class="flex flex-col items-center px-2 py-3 md:px-4 md:pt-7 md:pb-6">
                             <img class="w-80 mb-3 border border-gray-700 rounded-lg shadow-sm"
