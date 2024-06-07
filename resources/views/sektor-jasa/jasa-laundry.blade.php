@@ -8,7 +8,6 @@
     <title>Jasa Laundry - Sektor Jasa</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-
 <body>
     <x-navbar />
     <section id="laundry" class="py-20">
@@ -98,6 +97,18 @@
                                                 Telepon</label>
                                             <input type="number" name="telepon" id="telepon" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-900 focus:border-primary-900 block w-full p-2.5" placeholder="Nomor telepon yang dapat dihubungi" required>
                                         </div>
+                                        {{-- Dropdown List Layanan Laundry
+                                        <div class="col-span-2">
+                                            <form action="#">
+                                                <label class="block mb-2 text-sm font-medium text-primary-900" for="jenis-layanan">Jenis Layanan</label>
+                                                <select name="layanan-laundry" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-900 focus:border-primary-900 block w-full p-2.5" id="layanan-list">
+                                                  <option value="select">Pilih layanan</option>
+                                                  <option value="javascript">Cuci Gosok</option>
+                                                  <option value="php">Cuci</option>
+                                                  <option value="java">Gosok</option>
+                                                </select>
+                                          </form>
+                                        </div> --}}
                                         <div class="col-span-2">
                                             <label for="address" class="block mb-2 text-sm font-medium text-primary-900">Alamat
                                             </label>
