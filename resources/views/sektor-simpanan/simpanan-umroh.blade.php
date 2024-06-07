@@ -126,27 +126,13 @@
                                         </button>
                                     </div>
                                     <!-- Modal body -->
-<<<<<<< HEAD
                                     <form class="pb-4" onsubmit="sendMessage()">
                                         <div class=" h-64 overflow-y-auto border rounded-lg m-5 border-primary-900 px-4 pt-2 grid grid-cols-2">
-=======
-                                    <form class="pb-4">
-                                        <div
-                                            class=" h-64 overflow-y-auto border rounded-lg m-5 border-primary-900 px-4 pt-2 gap-2 grid grid-cols-2">
->>>>>>> e33faca4f45d868db66968a15ac5e5785a33488c
                                             <div class="col-span-2">
                                                 <label for="nomor-anggota" class="block mb-1 text-sm font-medium text-primary-900">Nomor
                                                     Anggota</label>
-<<<<<<< HEAD
                                                 <input type="text" id="nomor-anggota" name="nomor-anggota" maxlength="8" oninput="validateInput()" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-900 focus:border-primary-900 block w-full p-2.5" placeholder="Nomor Anggota Koperasi" required="">
                                                 <p id="error-message" class="mt-2 text-xs text-red-600"></p>
-=======
-                                                <input type="text" id="nomor-anggota" name="nomor-anggota"
-                                                    maxlength="8" oninput="validateInput()"
-                                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-900 focus:border-primary-900 block w-full p-2.5"
-                                                    placeholder="Nomor Anggota Koperasi" required="">
-                                                <p id="error-message" class="text-xs text-red-600"></p>
->>>>>>> e33faca4f45d868db66968a15ac5e5785a33488c
                                             </div>
                                             <div class="col-span-2">
                                                 <label for="nama" class="block mb-1 text-sm font-medium text-primary-900">Nama
