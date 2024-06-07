@@ -169,7 +169,7 @@
                 All</a>
             </div>
             <div class="w-full flex">
-                <div class="grid w-full overflow-x-auto px-2 py-4 grid-cols-2 lg:grid-cols-4 gap-3">
+                <div class="grid w-full overflow-x-auto px-2 py-4 grid-cols-2 lg:grid-cols-4 gap-4">
                     @foreach ($items->take(4) as $product)
                     @component('components.layanan.perdagangan.card-belanja ', [
                         'produk' => $product->product,

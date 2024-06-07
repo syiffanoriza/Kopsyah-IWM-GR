@@ -1,15 +1,15 @@
-<div class="md:w-3/4">
-    <div class="bg-white border border-primary-900 rounded-lg shadow-md p-2 md:p-3 mb-4">
+<div>
+    <div class="bg-white border border-primary-900 rounded-lg shadow-md shadow-primary-100 p-2 md:p-3 mb-4">
         <div class="w-full flex-row gap-5 justify-between flex sm:flex-row">
             <div class="flex items-center">
                 <img class="w-32 mr-4 rounded-md" src="https://via.placeholder.com/150" alt="Product image">
             </div>
             <div class="flex flex-row items-center justify-between w-full">
                 <div class="flex flex-col w-32 sm:w-fit items-start">
-                    <p class="font-medium text-base sm:text-lg">Sabun Lervia</p>
+                    <p class="font-medium text-base sm:text-lg">{{$produk}}</p>
                     <div class="flex justify-center">
                         <p class="text-gray-600 font-bold text-xs sm:text-sm">Rp</p>
-                        <p class="text-primary-900 text-base sm:text-2xl font-semibold">50.000</p>
+                        <p class="text-primary-900 text-base sm:text-2xl font-semibold">{{$harga}}</p>
                     </div>
                 </div>
                 <div

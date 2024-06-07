@@ -46,13 +46,21 @@
                 <div class="h-screen py-8">
                     <h1 class="text-2xl font-semibold mb-4 text-primary-900">Shopping Cart</h1>
                     <div class="flex flex-col md:flex-row gap-4">
-                        <x-cart-items/>     
+                        <div class="flex flex-col gap-1 w-full">
+                            @foreach ($cartItems as $item)
+                                @component('components.layanan.perdagangan.cart-items', [
+                                    'produk' => $item->product,
+                                    'harga' => number_format($item->price, 0, '.', ','),
+                                ])
+                                @endcomponent
+                            @endforeach  
+                        </div>
                         {{-- Purchase Resume --}}
                         <div class="md:w-2/5 w-full sticky-sidebar">
                             <div class="bg-white rounded-lg shadow-md p-4 border border-primary-900">
                                 <div class="flex justify-between mb-2">
                                     <span class="font-semibold">Subtotal</span>
-                                    <span class="font-medium text-primary-900">Rp50.000</span>
+                                    <span class="font-medium text-primary-900">Rp {{number_format($subtotal, 0, '.', ',')}}</span>
                                 </div>
                                 {{-- Go to Checkout Page --}}
                                 <button type="submit" 

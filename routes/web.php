@@ -55,7 +55,8 @@ Route::middleware('user.data')->group(function () {
         // Sektor Perdagangan Pages
         Route::get('/belanja', 'getCatalogue')->name('belanja');
         Route::get('/katalog-produk/{category}', 'getProducts');
-        Route::view('/cart-belanja', 'sektor-perdagangan/cart-belanja')->name('cart');
+        // Route::view('/cart-belanja', 'sektor-perdagangan/cart-belanja')->name('cart');
+        Route::get('/cart-belanja', 'getCart')->name('cart');
         Route::post('/cart-belanja/add', 'addCartItems')->name('cart.add');
         Route::view('/checkout-belanja', 'sektor-perdagangan/checkout-belanja');
         
