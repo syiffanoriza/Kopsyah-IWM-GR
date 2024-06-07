@@ -208,7 +208,7 @@
                                             role="tab" aria-controls="qris" aria-selected="false">QRIS</button>
                                     </li>
                                     <li role="presentation">
-                                        <button
+                                        <button 
                                             class="shadow-lg inline-block px-4 py-2.5 bg-primary-100 text-white rounded-e-full"
                                             id="card-styled-tab" data-tabs-target="#styled-card" type="button"
                                             role="tab" aria-controls="card" aria-selected="false">Transfer</button>
