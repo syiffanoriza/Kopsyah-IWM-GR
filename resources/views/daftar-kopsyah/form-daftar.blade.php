@@ -38,7 +38,7 @@
                 <div class="mb-5">
                     <label for="large-input" class="block mb-2 text-md font-bold text-primary-900 dark:text-white">Nomor
                         Telepon</label>
-                    <input type="text" id="telepon" class="block w-full p-4 text-gray-900 border border-gray-500 rounded-lg bg-gray-50 text-base focus:ring-primary-600 focus:border-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-600 dark:focus:border-primary-600" placeholder="Tulis nomor telepon anda" required>
+                    <input type="number" id="telepon" class="block w-full p-4 text-gray-900 border border-gray-500 rounded-lg bg-gray-50 text-base focus:ring-primary-600 focus:border-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-600 dark:focus:border-primary-600" placeholder="Tulis nomor telepon anda" required>
                 </div>
                 <div class="mb-5">
                     <label for="large-input" class="block mb-2 text-md font-bold text-primary-900 dark:text-white">Link Foto KTP</label>
@@ -52,27 +52,6 @@
                     <label for="large-input" class="block mb-2 text-md font-bold text-primary-900 dark:text-white">Link Foto Tanda Tangan</label>
                     <input type="text" id="tandatangan" class="block w-full p-4 text-gray-900 border border-gray-500 rounded-lg bg-gray-50 text-base focus:ring-primary-600 focus:border-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-600 dark:focus:border-primary-600" placeholder="Link Drive" required>
                 </div>
-                <!-- <div class="mb-9">
-                    <label class="block mb-2 text-md font-bold text-primary-900 dark:text-white" for="large_size">Foto
-                        KTP</label>
-                    <input
-                        class="block w-full text-lg text-gray-500 border border-gray-500 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="large_size" type="file" required>
-                </div>
-                <div class="mb-9">
-                    <label class="block mb-2 text-md font-bold text-primary-900 dark:text-white" for="large_size">Bukti
-                        Transfer Simpanan Anggota</label>
-                    <input
-                        class="block w-full text-lg text-gray-500 border border-gray-500 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="large_size" type="file" required>
-                </div>
-                <div class="mb-9">
-                    <label class="block mb-2 text-md font-bold text-primary-900 dark:text-white" for="large_size">Foto
-                        Tanda Tangan</label>
-                    <input
-                        class="block w-full text-lg text-gray-500 border border-gray-500 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                        id="large_size" type="file" required>
-                </div> -->
                 <div class="mb-5">
                     <label class="block mb-2 text-md font-bold text-primary-900 dark:text-white" for="large_size">Akad</label>
                     <div class="border border-gray-500 rounded-lg p-4 text-md font-medium">
