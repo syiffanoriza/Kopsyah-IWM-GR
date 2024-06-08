@@ -12,13 +12,12 @@
 <body>
     <x-navbar />
     <section id="jumbotron" class="pt-2 pb-12">
-        <x-banner image="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-3.png">
+        <x-banner>
             @slot('title')
                 Tentang Kami
             @endslot
             @slot('body')
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi facilis odit dolor corrupti similique ad
-                cupiditate fugit aliquam deleniti fuga.
+                Koperasi Syariah Ikatan Warga Muslim Graha Raya
             @endslot
         </x-banner>
     </section>
@@ -114,7 +113,7 @@
                 </h2>
                 <p class="text-lg lg:w-2/3 mx-auto text-center font-normal text-gray-600 lg:text-xl sm:px-16 xl:px-48">
                     Landasan koperasi yaitu berlandaskan Syariah Islam, Pancasila
-                    dan UUD 45 serta berdasarkan azas kekeluargaan.
+                    dan UUD 45 serta berdasarkan asas kekeluargaan.
                 </p>
                 <hr class="h-1 w-48 mx-auto bg-gray-700 mt-7">
             </div>

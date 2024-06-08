@@ -2,7 +2,7 @@
 <nav class="fixed w-full z-40 bg-white border-gray-200 border-b px-5">
     <div class="max-w-screen-2xl flex flex-wrap md:flex-nowrap items-center justify-between mx-auto">
         <a href="belanja" class="flex items-center space-x-3 m-2 rtl:space-x-reverse">
-            <img src="Assets/logo/logomark.png" class="h-8" alt="IWM Logo" />
+            <img src="{{asset('assets/logo/logomark.png')}}" class="h-8" alt="IWM Logo" />
         </a>
         <span class="flex items-center md:hidden">
             @if (Auth::check())
@@ -150,7 +150,7 @@
                     </span>
                     <a href="cart-belanja"
                         class="focus:ring-4 items-center justify-center hover:bg-primary-200 focus:ring-primary-300 font-medium rounded-md text-sm p-1 focus:outline-none">
-                        <img src="Assets/icons/cart.svg" class="h-6" alt="">
+                        <img src="{{asset('assets/icons/cart.svg')}}" class="h-6" alt="">
                     </a>
                 @else
                     <a href="cart-belanja"

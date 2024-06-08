@@ -51,6 +51,7 @@
                                 @component('components.layanan.perdagangan.cart-items', [
                                     'produk' => $item->product,
                                     'harga' => number_format($item->price, 0, '.', ','),
+                                    'id' => $item->product_id,
                                 ])
                                 @endcomponent
                             @endforeach  

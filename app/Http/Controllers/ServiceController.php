@@ -66,4 +66,17 @@ class ServiceController extends Controller
     
         return view('sektor-perdagangan/cart-belanja', compact('cartItems', 'subtotal'));
     }
+
+    public function deleteCartItem(Request $request) {
+        $cartItem = Cart::where('user_id', Auth::user()->user_id)
+        ->where('product_id', $request->id)
+        ->first();
+
+        if ($cartItem) {
+            $cartItem->delete();
+            return redirect()->back();
+        }
+
+        return redirect()->back();
+    }
 }

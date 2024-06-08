@@ -31,19 +31,19 @@ Route::middleware('user.data')->group(function () {
     Route::controller(ServiceController::class)->group(function () { 
         
         // Sektor Jasa
-        Route::view('/sektor-jasa', 'sektor-jasa/sektor-jasa');
+        Route::view('/sektor-jasa', 'sektor-jasa/sektor-jasa')->name('jasa');
         Route::view('/jasa-laundry', 'sektor-jasa/jasa-laundry');
         Route::view('/jasa-service-ac', 'sektor-jasa/jasa-service-ac');
         Route::view('/jasa-pick-up', 'sektor-jasa/jasa-pick-up');
         
         // Sektor Simpanan
-        Route::view('/sektor-simpanan', 'sektor-simpanan/sektor-simpanan');
+        Route::view('/sektor-simpanan', 'sektor-simpanan/sektor-simpanan')->name('simpanan');
         Route::view('/simpanan-berjangka', 'sektor-simpanan/simpanan-berjangka');
         Route::view('/simpanan-qurban', 'sektor-simpanan/simpanan-qurban');
         Route::view('/simpanan-umroh', 'sektor-simpanan/simpanan-umroh');
         
         // Sektor Pembiayaan Pages
-        Route::view('/sektor-pembiayaan', 'sektor-pembiayaan/sektor-pembiayaan');
+        Route::view('/sektor-pembiayaan', 'sektor-pembiayaan/sektor-pembiayaan')->name('pembiayaan');
         Route::view('/pembiayaan-konsumtif', 'sektor-pembiayaan/pembiayaan-konsumtif');
         Route::view('/pembiayaan-modal-umkm', 'sektor-pembiayaan/pembiayaan-modal-umkm');
         
@@ -55,9 +55,9 @@ Route::middleware('user.data')->group(function () {
         // Sektor Perdagangan Pages
         Route::get('/belanja', 'getCatalogue')->name('belanja');
         Route::get('/katalog-produk/{category}', 'getProducts');
-        // Route::view('/cart-belanja', 'sektor-perdagangan/cart-belanja')->name('cart');
         Route::get('/cart-belanja', 'getCart')->name('cart');
         Route::post('/cart-belanja/add', 'addCartItems')->name('cart.add');
+        Route::post('/cart-belanja/delete', 'deleteCartItem')->name('cart.delete');
         Route::view('/checkout-belanja', 'sektor-perdagangan/checkout-belanja');
         
         // Daftar Pages
