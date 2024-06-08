@@ -356,8 +356,8 @@
             </video>
         </div>
     </section>
-    <hr class="h-px mx-8 bg-gray-300 border-0 my-10">
     <section class="mt-24 mb-10 sm:mb-10 md:mb-10 hidden"> <!--TODO: @syiffanoriza @bebyazzura-->
+    <hr class="h-px mx-8 bg-gray-300 border-0 my-10">
         <div class="flex flex-col sm:flex-col md:flex-col lg:flex-row my-8 gap-x-12 gap-y-10">
             <div
                 class="bg-gradient-to-br from-primary-500 to-primary-900 w-full sm:w-1/2 h-96 text-white p-4 rounded-br-[70px] sm:rounded-br-[50px]">
